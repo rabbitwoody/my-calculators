@@ -1,0 +1,667 @@
+/* ============================================
+   CalcHub — Головний файл стилів
+   Підключається на КОЖНІЙ сторінці сайту
+   ============================================ */
+
+/* ===== ЗМІННІ КОЛЬОРІВ ===== */
+:root {
+  /* Категорії */
+  --finance-primary: #1a6eb5;
+  --finance-light:   #e6f1fb;
+  --finance-accent:  #378add;
+
+  --health-primary:  #c0392b;
+  --health-light:    #fbeaea;
+  --health-accent:   #e74c3c;
+
+  --construction-primary: #d35400;
+  --construction-light:   #fef0e6;
+  --construction-accent:  #e67e22;
+
+  --math-primary:    #6c3483;
+  --math-light:      #f5eef8;
+  --math-accent:     #9b59b6;
+
+  --converter-primary: #0e7f6a;
+  --converter-light:   #e1f5ee;
+  --converter-accent:  #1abc9c;
+
+  --other-primary:   #7d6608;
+  --other-light:     #fef9e7;
+  --other-accent:    #f1c40f;
+
+  /* Загальні */
+  --text-dark:  #1a1a2e;
+  --text-mid:   #4a4a6a;
+  --text-light: #7a7a9a;
+  --bg-page:    #f8f9ff;
+  --bg-white:   #ffffff;
+  --border:     #e0e4f0;
+  --radius:     12px;
+  --radius-sm:  8px;
+  --shadow:     0 2px 12px rgba(0,0,0,0.08);
+  --shadow-hover: 0 6px 24px rgba(0,0,0,0.14);
+}
+
+/* ===== RESET ===== */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: var(--bg-page);
+  color: var(--text-dark);
+  font-size: 16px;
+  line-height: 1.6;
+}
+a { text-decoration: none; color: inherit; }
+ul { list-style: none; }
+img { max-width: 100%; height: auto; }
+
+/* ===== ХЕДЕР ===== */
+.header {
+  background: var(--bg-white);
+  border-bottom: 2px solid var(--border);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: var(--shadow);
+}
+.header-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 64px;
+  gap: 24px;
+}
+.logo {
+  font-size: 24px;
+  font-weight: 800;
+  background: linear-gradient(135deg, #1a6eb5, #9b59b6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  white-space: nowrap;
+}
+.logo span { color: #e74c3c; -webkit-text-fill-color: #e74c3c; }
+
+/* Навігація */
+.nav { display: flex; align-items: center; gap: 4px; }
+.nav-item { position: relative; }
+.nav-link {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 14px;
+  border-radius: var(--radius-sm);
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-mid);
+  cursor: pointer;
+  transition: all 0.2s;
+  white-space: nowrap;
+}
+.nav-link:hover { background: var(--bg-page); color: var(--text-dark); }
+.nav-link .dot {
+  width: 8px; height: 8px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+/* Dropdown */
+.dropdown {
+  position: absolute;
+  top: calc(100% + 8px);
+  left: 0;
+  background: var(--bg-white);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-hover);
+  min-width: 220px;
+  padding: 8px;
+  display: none;
+  z-index: 2000;
+}
+.nav-item:hover .dropdown { display: block; }
+.dropdown a {
+  display: block;
+  padding: 10px 14px;
+  border-radius: var(--radius-sm);
+  font-size: 14px;
+  color: var(--text-mid);
+  transition: all 0.15s;
+}
+.dropdown a:hover { background: var(--bg-page); color: var(--text-dark); }
+
+/* Мова + дії */
+.header-actions { display: flex; align-items: center; gap: 12px; }
+.lang-switcher {
+  display: flex;
+  gap: 4px;
+  background: var(--bg-page);
+  border-radius: var(--radius-sm);
+  padding: 4px;
+}
+.lang-btn {
+  padding: 4px 12px;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  background: transparent;
+  color: var(--text-mid);
+  transition: all 0.2s;
+}
+.lang-btn.active {
+  background: var(--bg-white);
+  color: var(--text-dark);
+  box-shadow: var(--shadow);
+}
+
+/* Бургер */
+.burger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+  padding: 8px;
+}
+.burger span {
+  display: block;
+  width: 24px; height: 2px;
+  background: var(--text-dark);
+  border-radius: 2px;
+  transition: all 0.3s;
+}
+
+/* ===== ХЛІБНІ КРИХТИ ===== */
+.breadcrumb-bar {
+  background: var(--bg-white);
+  border-bottom: 1px solid var(--border);
+}
+.breadcrumb {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 10px 24px;
+  font-size: 13px;
+  color: var(--text-light);
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.breadcrumb a { color: var(--text-light); transition: color 0.2s; }
+.breadcrumb a:hover { color: var(--text-dark); }
+.breadcrumb .sep { opacity: 0.4; }
+
+/* ===== HERO (головна) ===== */
+.hero {
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+  padding: 80px 24px 60px;
+  text-align: center;
+  color: white;
+}
+.hero h1 {
+  font-size: clamp(28px, 5vw, 52px);
+  font-weight: 800;
+  margin-bottom: 16px;
+  line-height: 1.2;
+}
+.hero h1 span {
+  background: linear-gradient(90deg, #64b3f4, #c2e59c);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.hero p {
+  font-size: 18px;
+  opacity: 0.85;
+  max-width: 560px;
+  margin: 0 auto 32px;
+}
+
+/* Hero (сторінка калькулятора) */
+.calc-hero {
+  padding: 40px 24px 32px;
+  text-align: center;
+}
+.calc-hero h1 {
+  font-size: clamp(24px, 4vw, 40px);
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+.calc-hero p {
+  font-size: 16px;
+  color: var(--text-mid);
+  max-width: 560px;
+  margin: 0 auto;
+}
+
+/* ===== ПОШУК ===== */
+.search-box {
+  max-width: 560px;
+  margin: 0 auto;
+  position: relative;
+}
+.search-box input {
+  width: 100%;
+  padding: 16px 56px 16px 24px;
+  border-radius: 50px;
+  border: 2px solid rgba(255,255,255,0.2);
+  background: rgba(255,255,255,0.12);
+  color: white;
+  font-size: 16px;
+  outline: none;
+  transition: all 0.3s;
+}
+.search-box input::placeholder { color: rgba(255,255,255,0.55); }
+.search-box input:focus {
+  border-color: rgba(255,255,255,0.6);
+  background: rgba(255,255,255,0.18);
+}
+.search-icon {
+  position: absolute;
+  right: 18px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 20px;
+  opacity: 0.7;
+}
+
+/* ===== ГОЛОВНИЙ КОНТЕНТ ===== */
+.main { max-width: 1200px; margin: 0 auto; padding: 48px 24px; }
+
+.section-title {
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--text-dark);
+  margin-bottom: 8px;
+}
+.section-subtitle {
+  font-size: 16px;
+  color: var(--text-light);
+  margin-bottom: 32px;
+}
+
+/* ===== КАРТКИ КАТЕГОРІЙ ===== */
+.categories-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 24px;
+  margin-bottom: 64px;
+}
+.category-card {
+  background: var(--bg-white);
+  border-radius: var(--radius);
+  border: 2px solid var(--border);
+  padding: 28px;
+  transition: all 0.25s;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  display: block;
+}
+.category-card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 4px;
+}
+.category-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-hover);
+}
+
+/* Кольори категорій */
+.cat-finance { border-color: var(--finance-primary); }
+.cat-finance::before { background: linear-gradient(90deg, var(--finance-primary), var(--finance-accent)); }
+.cat-finance .cat-icon { background: var(--finance-light); color: var(--finance-primary); }
+.cat-finance .cat-count { background: var(--finance-light); color: var(--finance-primary); }
+
+.cat-health { border-color: var(--health-primary); }
+.cat-health::before { background: linear-gradient(90deg, var(--health-primary), var(--health-accent)); }
+.cat-health .cat-icon { background: var(--health-light); color: var(--health-primary); }
+.cat-health .cat-count { background: var(--health-light); color: var(--health-primary); }
+
+.cat-construction { border-color: var(--construction-primary); }
+.cat-construction::before { background: linear-gradient(90deg, var(--construction-primary), var(--construction-accent)); }
+.cat-construction .cat-icon { background: var(--construction-light); color: var(--construction-primary); }
+.cat-construction .cat-count { background: var(--construction-light); color: var(--construction-primary); }
+
+.cat-math { border-color: var(--math-primary); }
+.cat-math::before { background: linear-gradient(90deg, var(--math-primary), var(--math-accent)); }
+.cat-math .cat-icon { background: var(--math-light); color: var(--math-primary); }
+.cat-math .cat-count { background: var(--math-light); color: var(--math-primary); }
+
+.cat-converter { border-color: var(--converter-primary); }
+.cat-converter::before { background: linear-gradient(90deg, var(--converter-primary), var(--converter-accent)); }
+.cat-converter .cat-icon { background: var(--converter-light); color: var(--converter-primary); }
+.cat-converter .cat-count { background: var(--converter-light); color: var(--converter-primary); }
+
+.cat-other { border-color: var(--other-primary); }
+.cat-other::before { background: linear-gradient(90deg, var(--other-primary), var(--other-accent)); }
+.cat-other .cat-icon { background: var(--other-light); color: var(--other-primary); }
+.cat-other .cat-count { background: var(--other-light); color: var(--other-primary); }
+
+.cat-header { display: flex; align-items: center; gap: 16px; margin-bottom: 16px; }
+.cat-icon {
+  width: 52px; height: 52px;
+  border-radius: var(--radius-sm);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 26px;
+  flex-shrink: 0;
+}
+.cat-title { font-size: 20px; font-weight: 700; }
+.cat-count {
+  display: inline-block;
+  padding: 2px 10px;
+  border-radius: 50px;
+  font-size: 12px;
+  font-weight: 700;
+  margin-top: 4px;
+}
+.cat-list { display: flex; flex-wrap: wrap; gap: 8px; }
+.cat-tag {
+  padding: 6px 14px;
+  border-radius: 50px;
+  font-size: 13px;
+  font-weight: 500;
+  background: var(--bg-page);
+  color: var(--text-mid);
+  border: 1px solid var(--border);
+  transition: all 0.2s;
+}
+.cat-tag:hover {
+  background: var(--bg-white);
+  color: var(--text-dark);
+  transform: scale(1.04);
+}
+
+/* ===== ПОПУЛЯРНІ КАРТКИ ===== */
+.popular-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 16px;
+  margin-bottom: 64px;
+}
+.popular-card {
+  background: var(--bg-white);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+.popular-card:hover {
+  box-shadow: var(--shadow);
+  transform: translateY(-2px);
+}
+.popular-icon {
+  width: 44px; height: 44px;
+  border-radius: var(--radius-sm);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 22px;
+  flex-shrink: 0;
+}
+.popular-name { font-size: 15px; font-weight: 600; color: var(--text-dark); }
+.popular-desc { font-size: 13px; color: var(--text-light); margin-top: 2px; }
+
+/* ===== БЛОК КАЛЬКУЛЯТОРА ===== */
+.calc-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+  margin-bottom: 48px;
+}
+.calc-card {
+  background: var(--bg-white);
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  padding: 32px;
+  box-shadow: var(--shadow);
+}
+.calc-card h2 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+
+/* Поля форми */
+.form-group { margin-bottom: 20px; }
+.form-group label {
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-mid);
+  margin-bottom: 8px;
+}
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 12px 16px;
+  border: 2px solid var(--border);
+  border-radius: var(--radius-sm);
+  font-size: 16px;
+  color: var(--text-dark);
+  background: var(--bg-white);
+  transition: border-color 0.2s;
+  outline: none;
+}
+.form-group input:focus,
+.form-group select:focus { border-color: var(--finance-primary); }
+
+.calc-btn {
+  width: 100%;
+  padding: 14px;
+  border-radius: var(--radius-sm);
+  border: none;
+  font-size: 16px;
+  font-weight: 700;
+  color: white;
+  cursor: pointer;
+  transition: all 0.2s;
+  margin-top: 8px;
+}
+.calc-btn:hover { opacity: 0.9; transform: translateY(-1px); }
+.calc-btn:active { transform: translateY(0); }
+
+/* Кнопки по категоріях */
+.calc-btn-finance  { background: linear-gradient(135deg, var(--finance-primary), var(--finance-accent)); }
+.calc-btn-health   { background: linear-gradient(135deg, var(--health-primary), var(--health-accent)); }
+.calc-btn-construction { background: linear-gradient(135deg, var(--construction-primary), var(--construction-accent)); }
+.calc-btn-math     { background: linear-gradient(135deg, var(--math-primary), var(--math-accent)); }
+.calc-btn-converter { background: linear-gradient(135deg, var(--converter-primary), var(--converter-accent)); }
+
+/* Результат */
+.result-card {
+  background: var(--bg-white);
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  padding: 32px;
+}
+.result-main {
+  text-align: center;
+  padding: 24px;
+  border-radius: var(--radius-sm);
+  margin-bottom: 24px;
+}
+.result-label { font-size: 14px; font-weight: 600; opacity: 0.75; margin-bottom: 8px; }
+.result-value { font-size: 36px; font-weight: 800; }
+.result-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 0;
+  border-bottom: 1px solid var(--border);
+  font-size: 15px;
+}
+.result-row:last-child { border-bottom: none; }
+.result-row span:first-child { color: var(--text-mid); }
+.result-row span:last-child { font-weight: 600; }
+
+/* Кольори результату по категоріях */
+.result-finance  { background: var(--finance-light); color: var(--finance-primary); }
+.result-health   { background: var(--health-light);  color: var(--health-primary); }
+.result-construction { background: var(--construction-light); color: var(--construction-primary); }
+.result-math     { background: var(--math-light);    color: var(--math-primary); }
+.result-converter { background: var(--converter-light); color: var(--converter-primary); }
+
+/* ===== SEO ТЕКСТОВИЙ БЛОК ===== */
+.seo-block {
+  background: var(--bg-white);
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  padding: 40px;
+  margin-bottom: 48px;
+}
+.seo-block h2 { font-size: 22px; margin-bottom: 16px; }
+.seo-block h3 { font-size: 18px; margin: 24px 0 12px; }
+.seo-block p  { color: var(--text-mid); margin-bottom: 12px; line-height: 1.8; }
+
+/* ===== FAQ ===== */
+.faq-item {
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  margin-bottom: 12px;
+  overflow: hidden;
+}
+.faq-question {
+  padding: 16px 20px;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--bg-white);
+  transition: background 0.2s;
+}
+.faq-question:hover { background: var(--bg-page); }
+.faq-answer {
+  padding: 0 20px;
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.3s;
+  color: var(--text-mid);
+  font-size: 15px;
+  line-height: 1.7;
+}
+.faq-item.open .faq-answer { max-height: 300px; padding: 16px 20px; }
+.faq-arrow { transition: transform 0.3s; }
+.faq-item.open .faq-arrow { transform: rotate(180deg); }
+
+/* ===== СХОЖІ КАЛЬКУЛЯТОРИ ===== */
+.related-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
+  margin-bottom: 48px;
+}
+.related-card {
+  background: var(--bg-white);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 20px;
+  text-align: center;
+  transition: all 0.2s;
+  display: block;
+}
+.related-card:hover {
+  box-shadow: var(--shadow);
+  transform: translateY(-2px);
+}
+.related-icon { font-size: 32px; margin-bottom: 10px; }
+.related-name { font-size: 14px; font-weight: 600; color: var(--text-dark); }
+
+/* ===== ФУТЕР ===== */
+.footer {
+  background: #1a1a2e;
+  color: rgba(255,255,255,0.85);
+  padding: 64px 24px 32px;
+}
+.footer-inner { max-width: 1200px; margin: 0 auto; }
+.footer-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  gap: 48px;
+  margin-bottom: 48px;
+}
+.footer-brand .logo { font-size: 22px; }
+.footer-brand p {
+  font-size: 14px;
+  opacity: 0.65;
+  margin-top: 12px;
+  line-height: 1.7;
+}
+.footer-col h4 {
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  opacity: 0.5;
+  margin-bottom: 16px;
+}
+.footer-col a {
+  display: block;
+  font-size: 14px;
+  opacity: 0.75;
+  padding: 4px 0;
+  transition: opacity 0.2s;
+}
+.footer-col a:hover { opacity: 1; }
+.footer-bottom {
+  border-top: 1px solid rgba(255,255,255,0.1);
+  padding-top: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 13px;
+  opacity: 0.5;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+.footer-langs { display: flex; gap: 16px; }
+.footer-langs a { opacity: 0.7; font-size: 13px; }
+.footer-langs a:hover { opacity: 1; }
+
+/* ===== МОБІЛЬНА АДАПТАЦІЯ ===== */
+@media (max-width: 900px) {
+  .calc-layout { grid-template-columns: 1fr; }
+}
+@media (max-width: 768px) {
+  .nav { display: none; }
+  .burger { display: flex; }
+  .nav.open {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 64px; left: 0; right: 0; bottom: 0;
+    background: var(--bg-white);
+    padding: 24px;
+    z-index: 999;
+    overflow-y: auto;
+    align-items: flex-start;
+    gap: 8px;
+  }
+  .nav.open .dropdown {
+    display: block;
+    position: static;
+    box-shadow: none;
+    border: none;
+    padding: 0 0 0 16px;
+  }
+  .nav.open .nav-link { font-size: 16px; padding: 12px 14px; }
+  .footer-grid { grid-template-columns: 1fr 1fr; gap: 32px; }
+  .hero { padding: 48px 24px 40px; }
+  .seo-block { padding: 24px; }
+}
+@media (max-width: 480px) {
+  .footer-grid { grid-template-columns: 1fr; }
+  .header-actions .lang-switcher { display: none; }
+  .main { padding: 32px 16px; }
+}
