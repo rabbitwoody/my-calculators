@@ -2,7 +2,8 @@
   "cleanUrls": true,
   "trailingSlash": true,
   "rewrites": [
-    { "source": "/", "destination": "/index.html" }
+    { "source": "/", "destination": "/calchub/index.html" },
+    { "source": "/(.*)", "destination": "/calchub/$1" }
   ],
   "headers": [
     {
