@@ -865,19 +865,19 @@
   }
 
   // Автовизначення мови при першому відвідуванні
-  (function() {
-    const saved = localStorage.getItem('lang');
-    if (!saved) {
-      const browserLang = navigator.language.slice(0, 2);
-      const supported = ['uk', 'ru'];
-      const lang = supported.includes(browserLang) ? browserLang : 'uk';
-      localStorage.setItem('lang', lang);
-      const currentPath = window.location.pathname;
-      if (!currentPath.startsWith('/' + lang)) {
-        window.location.href = '/' + lang + '/';
-      }
+ (function() {
+  const saved = localStorage.getItem('lang');
+  if (!saved) {
+    const browserLang = navigator.language.slice(0, 2);
+    const supported = ['uk', 'ru'];
+    const lang = supported.includes(browserLang) ? browserLang : 'uk';
+    localStorage.setItem('lang', lang);
+    const currentPath = window.location.pathname;
+    if (!currentPath.includes('/' + lang + '/')) {
+      window.location.href = '/calchub/' + lang + '/';
     }
-  })();
+  }
+})();
 </script>
 
 </body>
