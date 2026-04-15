@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Ипотечный калькулятор онлайн 2025 — расчёт ежемесячного платежа | CalcHub</title>
+  <meta name="description" content="Ипотечный калькулятор онлайн: рассчитайте ежемесячный платёж, сумму переплаты и график выплат. Поддержка аннуитетного и дифференцированного платежа. Бесплатно.">
+  <link rel="canonical" href="https://calchub.com/ru/finance/mortgage/">
+
+  <link rel="alternate" hreflang="uk" href="https://calchub.com/uk/finance/mortgage/">
+  <link rel="alternate" hreflang="ru" href="https://calchub.com/ru/finance/mortgage/">
+  <link rel="alternate" hreflang="x-default" href="https://calchub.com/uk/finance/mortgage/">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Ипотечный калькулятор",
+    "url": "https://calchub.com/ru/finance/mortgage/",
+    "description": "Онлайн калькулятор для расчёта ипотечного кредита",
+    "applicationCategory": "FinanceApplication",
+    "inLanguage": "ru",
+    "isAccessibleForFree": true,
+    "offers": { "@type": "Offer", "price": "0" }
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Главная", "item": "https://calchub.com/ru/" },
+      { "@type": "ListItem", "position": 2, "name": "Финансы", "item": "https://calchub.com/ru/finance/" },
+      { "@type": "ListItem", "position": 3, "name": "Ипотечный калькулятор" }
+    ]
+  }
+  </script>
+
+  <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+
+<header class="header">
+  <div class="header-inner">
+    <a href="/ru/" class="logo">Calc<span>Hub</span></a>
+    <nav class="nav" id="mainNav">
+      <div class="nav-item">
+        <div class="nav-link">
+          <span class="dot" style="background:#1a6eb5"></span>Финансы
+        </div>
+        <div class="dropdown">
+          <a href="/ru/finance/mortgage/">🏠 Ипотечный калькулятор</a>
+          <a href="/ru/finance/credit/">💳 Кредитный калькулятор</a>
+          <a href="/ru/finance/deposit/">🏦 Калькулятор депозита</a>
+          <a href="/ru/finance/vat/">🧾 Калькулятор НДС</a>
+          <a href="/ru/finance/salary/">💵 Калькулятор зарплаты</a>
+          <a href="/ru/finance/">Все финансовые →</a>
+        </div>
+      </div>
+      <div class="nav-item">
+        <div class="nav-link">
+          <span class="dot" style="background:#c0392b"></span>Здоровье
+        </div>
+        <div class="dropdown">
+          <a href="/ru/health/bmi/">⚖️ Калькулятор ИМТ</a>
+          <a href="/ru/health/calories/">🥗 Калькулятор калорий</a>
+          <a href="/ru/health/">Все медицинские →</a>
+        </div>
+      </div>
+      <div class="nav-item">
+        <div class="nav-link">
+          <span class="dot" style="background:#d35400"></span>Строительство
+        </div>
+        <div class="dropdown">
+          <a href="/ru/construction/tiles/">🏗️ Калькулятор плитки</a>
+          <a href="/ru/construction/">Все строительные →</a>
+        </div>
+      </div>
+      <div class="nav-item">
+        <div class="nav-link">
+          <span class="dot" style="background:#6c3483"></span>Математика
+        </div>
+        <div class="dropdown">
+          <a href="/ru/math/percentage/">📊 Калькулятор процентов</a>
+          <a href="/ru/math/">Все математические →</a>
+        </div>
+      </div>
+      <div class="nav-item">
+        <div class="nav-link">
+          <span class="dot" style="background:#0e7f6a"></span>Конвертеры
+        </div>
+        <div class="dropdown">
+          <a href="/ru/converter/currency/">💱 Конвертер валют</a>
+          <a href="/ru/converter/">Все конвертеры →</a>
+        </div>
+      </div>
+    </nav>
+    <div class="header-actions">
+      <div class="lang-switcher">
+        <button class="lang-btn" data-lang="uk" onclick="switchLang('uk')">УКР</button>
+        <button class="lang-btn active" data-lang="ru" onclick="switchLang('ru')">РУС</button>
+      </div>
+      <div class="burger" id="burger" onclick="toggleMenu()">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="breadcrumb-bar">
+  <nav class="breadcrumb" aria-label="breadcrumb">
+    <a href="/ru/">Главная</a>
+    <span class="sep">›</span>
+    <a href="/ru/finance/">Финансы</a>
+    <span class="sep">›</span>
+    <span>Ипотечный калькулятор</span>
+  </nav>
+</div>
+
+<div class="calc-hero" style="background:linear-gradient(135deg,var(--finance-light),#fff);">
+  <h1 style="color:var(--finance-primary)">🏠 Ипотечный калькулятор</h1>
+  <p>Рассчитайте ежемесячный платёж, переплату и график выплат по ипотечному кредиту</p>
+</div>
+
+<main class="main">
+  <div class="calc-layout">
+
+    <div class="calc-card">
+      <h2>Параметры кредита</h2>
+
+      <div class="form-group">
+        <label for="amount">Сумма кредита (грн)</label>
+        <input type="number" id="amount" placeholder="Например: 2000000" value="2000000" min="10000">
+      </div>
+      <div class="form-group">
+        <label for="rate">Процентная ставка (% годовых)</label>
+        <input type="number" id="rate" placeholder="Например: 15" value="15" min="0.1" max="100" step="0.1">
+      </div>
+      <div class="form-group">
+        <label for="term">Срок кредита (лет)</label>
+        <input type="number" id="term" placeholder="Например: 20" value="20" min="1" max="30">
+      </div>
+      <div class="form-group">
+        <label for="payType">Тип платежа</label>
+        <select id="payType">
+          <option value="annuity">Аннуитетный (одинаковые платежи)</option>
+          <option value="diff">Дифференцированный (уменьшаются)</option>
+        </select>
+      </div>
+
+      <button class="calc-btn calc-btn-finance" onclick="calculate()">
+        Рассчитать ипотеку
+      </button>
+    </div>
+
+    <div class="result-card" id="resultCard">
+      <h2>Результат расчёта</h2>
+      <div class="result-main result-finance">
+        <div class="result-label">Ежемесячный платёж</div>
+        <div class="result-value" id="monthlyPayment">—</div>
+      </div>
+      <div class="result-row">
+        <span>Сумма кредита</span><span id="resAmount">—</span>
+      </div>
+      <div class="result-row">
+        <span>Общая сумма выплат</span><span id="totalPayment">—</span>
+      </div>
+      <div class="result-row">
+        <span>Сумма переплаты</span>
+        <span id="overpayment" style="color:var(--health-primary)">—</span>
+      </div>
+      <div class="result-row">
+        <span>Срок кредита</span><span id="resTerm">—</span>
+      </div>
+      <div class="result-row">
+        <span>Тип платежа</span><span id="resType">—</span>
+      </div>
+    </div>
+  </div>
+
+  <div id="scheduleSection" style="display:none; margin-bottom:48px;">
+    <h2 class="section-title" style="margin-bottom:16px;">График платежей</h2>
+    <div style="overflow-x:auto;">
+      <table id="scheduleTable" style="width:100%; border-collapse:collapse; background:var(--bg-white); border-radius:var(--radius); overflow:hidden; box-shadow:var(--shadow);">
+        <thead>
+          <tr style="background:var(--finance-primary); color:white;">
+            <th style="padding:12px 16px; text-align:left; font-size:14px;">Месяц</th>
+            <th style="padding:12px 16px; text-align:right; font-size:14px;">Платёж</th>
+            <th style="padding:12px 16px; text-align:right; font-size:14px;">Основной долг</th>
+            <th style="padding:12px 16px; text-align:right; font-size:14px;">Проценты</th>
+            <th style="padding:12px 16px; text-align:right; font-size:14px;">Остаток</th>
+          </tr>
+        </thead>
+        <tbody id="scheduleBody"></tbody>
+      </table>
+    </div>
+    <p style="font-size:13px; color:var(--text-light); margin-top:12px; text-align:center;">
+      Показаны первые 24 месяца из <span id="totalMonths"></span>
+    </p>
+  </div>
+
+  <section class="seo-block" style="margin-bottom:48px;">
+    <h2>Ипотечный калькулятор онлайн — CalcHub</h2>
+    <p>Наш бесплатный ипотечный калькулятор поможет быстро рассчитать ежемесячный платёж по ипотеке, общую сумму выплат и переплату за весь срок кредита.</p>
+    <h3>Как пользоваться калькулятором</h3>
+    <p>Введите сумму кредита в гривнах, годовую процентную ставку и срок кредита в годах. Выберите тип платежа — аннуитетный или дифференцированный. Нажмите «Рассчитать ипотеку».</p>
+    <h3>Программа єОселя</h3>
+    <p>В Украине действует государственная программа льготного ипотечного кредитования «єОселя» со ставкой 7% годовых для военнослужащих, полицейских, учителей, врачей и молодёжи до 25 лет.</p>
+  </section>
+
+  <h2 class="section-title">Похожие калькуляторы</h2>
+  <p class="section-subtitle" style="margin-bottom:24px;">Возможно, вам понадобятся</p>
+  <div class="related-grid">
+    <a href="/ru/finance/credit/" class="related-card">
+      <div class="related-icon">💳</div>
+      <div class="related-name">Кредитный калькулятор</div>
+    </a>
+    <a href="/ru/finance/deposit/" class="related-card">
+      <div class="related-icon">🏦</div>
+      <div class="related-name">Калькулятор депозита</div>
+    </a>
+    <a href="/ru/finance/vat/" class="related-card">
+      <div class="related-icon">🧾</div>
+      <div class="related-name">Калькулятор НДС</div>
+    </a>
+    <a href="/ru/finance/salary/" class="related-card">
+      <div class="related-icon">💵</div>
+      <div class="related-name">Калькулятор зарплаты</div>
+    </a>
+    <a href="/ru/math/percentage/" class="related-card">
+      <div class="related-icon">📊</div>
+      <div class="related-name">Калькулятор процентов</div>
+    </a>
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="logo">Calc<span>Hub</span></div>
+        <p>Бесплатные онлайн калькуляторы для решения повседневных задач.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Финансы</h4>
+        <a href="/ru/finance/mortgage/">Ипотека</a>
+        <a href="/ru/finance/credit/">Кредит</a>
+        <a href="/ru/finance/deposit/">Депозит</a>
+        <a href="/ru/finance/vat/">НДС</a>
+        <a href="/ru/finance/">Все →</a>
+      </div>
+      <div class="footer-col">
+        <h4>Здоровье</h4>
+        <a href="/ru/health/bmi/">ИМТ</a>
+        <a href="/ru/health/calories/">Калории</a>
+        <a href="/ru/health/">Все →</a>
+      </div>
+      <div class="footer-col">
+        <h4>Информация</h4>
+        <a href="/ru/about/">О нас</a>
+        <a href="/ru/contact/">Контакты</a>
+        <a href="/ru/privacy/">Конфиденциальность</a>
+        <a href="/sitemap.xml">Sitemap</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2025 CalcHub. Все права защищены.</span>
+      <div class="footer-langs">
+        <a href="/uk/">🇺🇦 Українська</a>
+        <a href="/ru/">🇷🇺 Русский</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="/assets/js/main.js"></script>
+<script>
+  function calculate() {
+    const amount = parseFloat(document.getElementById('amount').value) || 0;
+    const rate   = parseFloat(document.getElementById('rate').value) || 0;
+    const term   = parseFloat(document.getElementById('term').value) || 0;
+    const type   = document.getElementById('payType').value;
+
+    if (!amount || !rate || !term) {
+      alert('Пожалуйста, заполните все поля');
+      return;
+    }
+
+    const months = term * 12;
+    const r = rate / 100 / 12;
+    let monthlyPayment, totalPayment;
+
+    if (type === 'annuity') {
+      monthlyPayment = amount * (r * Math.pow(1 + r, months)) / (Math.pow(1 + r, months) - 1);
+      totalPayment = monthlyPayment * months;
+    } else {
+      const principalPart = amount / months;
+      monthlyPayment = principalPart + amount * r;
+      totalPayment = amount + (amount * r * (months + 1) / 2);
+    }
+
+    const overpayment = totalPayment - amount;
+
+    document.getElementById('monthlyPayment').textContent = formatNumber(monthlyPayment) + ' ₴';
+    document.getElementById('resAmount').textContent = formatNumber(amount) + ' ₴';
+    document.getElementById('totalPayment').textContent = formatNumber(totalPayment) + ' ₴';
+    document.getElementById('overpayment').textContent = formatNumber(overpayment) + ' ₴';
+    document.getElementById('resTerm').textContent = term + ' ' + pluralYears(term);
+    document.getElementById('resType').textContent = type === 'annuity' ? 'Аннуитетный' : 'Дифференцированный';
+
+    buildSchedule(amount, r, months, type);
+    document.getElementById('scheduleSection').style.display = 'block';
+  }
+
+  function buildSchedule(amount, r, months, type) {
+    const tbody = document.getElementById('scheduleBody');
+    tbody.innerHTML = '';
+    document.getElementById('totalMonths').textContent = months;
+    let balance = amount;
+    const principalPart = amount / months;
+    const limit = Math.min(24, months);
+
+    for (let i = 1; i <= limit; i++) {
+      let payment, principal, interest;
+      if (type === 'annuity') {
+        payment = amount * (r * Math.pow(1 + r, months)) / (Math.pow(1 + r, months) - 1);
+        interest = balance * r;
+        principal = payment - interest;
+      } else {
+        interest = balance * r;
+        principal = principalPart;
+        payment = principal + interest;
+      }
+      balance -= principal;
+      if (balance < 0) balance = 0;
+
+      const tr = document.createElement('tr');
+      tr.style.cssText = i % 2 === 0 ? 'background:var(--bg-page)' : 'background:var(--bg-white)';
+      tr.innerHTML = `
+        <td style="padding:10px 16px; font-size:14px;">${i}</td>
+        <td style="padding:10px 16px; text-align:right; font-size:14px; font-weight:600;">${formatNumber(payment)} ₴</td>
+        <td style="padding:10px 16px; text-align:right; font-size:14px; color:var(--finance-primary)">${formatNumber(principal)} ₴</td>
+        <td style="padding:10px 16px; text-align:right; font-size:14px; color:var(--health-primary)">${formatNumber(interest)} ₴</td>
+        <td style="padding:10px 16px; text-align:right; font-size:14px;">${formatNumber(balance)} ₴</td>
+      `;
+      tbody.appendChild(tr);
+    }
+  }
+
+  function pluralYears(n) {
+    if (n % 10 === 1 && n % 100 !== 11) return 'год';
+    if ([2,3,4].includes(n % 10) && ![12,13,14].includes(n % 100)) return 'года';
+    return 'лет';
+  }
+</script>
+</body>
+</html>

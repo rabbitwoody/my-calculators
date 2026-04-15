@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>CalcHub — Все калькуляторы онлайн бесплатно</title>
+  <meta name="description" content="Сотни бесплатных онлайн калькуляторов: финансовые, медицинские, строительные, математические и конвертеры. Быстро, точно, удобно.">
+  <link rel="canonical" href="https://calchub.com/ru/">
+
+  <link rel="alternate" hreflang="uk" href="https://calchub.com/uk/">
+  <link rel="alternate" hreflang="ru" href="https://calchub.com/ru/">
+  <link rel="alternate" hreflang="x-default" href="https://calchub.com/uk/">
+
+  <meta property="og:title" content="CalcHub — Все калькуляторы онлайн">
+  <meta property="og:description" content="Сотни бесплатных онлайн калькуляторов">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://calchub.com/ru/">
+  <meta property="og:locale" content="ru_UA">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "CalcHub",
+    "url": "https://calchub.com",
+    "description": "Бесплатные онлайн калькуляторы",
+    "inLanguage": "ru"
+  }
+  </script>
+
+  <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+
+<header class="header">
+  <div class="header-inner">
+    <a href="/ru/" class="logo">Calc<span>Hub</span></a>
+    <nav class="nav" id="mainNav">
+      <div class="nav-item">
+        <div class="nav-link">
+          <span class="dot" style="background:#1a6eb5"></span>Финансы
+        </div>
+        <div class="dropdown">
+          <a href="/ru/finance/mortgage/">🏠 Ипотечный калькулятор</a>
+          <a href="/ru/finance/credit/">💳 Кредитный калькулятор</a>
+          <a href="/ru/finance/deposit/">🏦 Калькулятор депозита</a>
+          <a href="/ru/finance/vat/">🧾 Калькулятор НДС</a>
+          <a href="/ru/finance/salary/">💵 Калькулятор зарплаты</a>
+          <a href="/ru/finance/">Все финансовые →</a>
+        </div>
+      </div>
+      <div class="nav-item">
+        <div class="nav-link">
+          <span class="dot" style="background:#c0392b"></span>Здоровье
+        </div>
+        <div class="dropdown">
+          <a href="/ru/health/bmi/">⚖️ Калькулятор ИМТ</a>
+          <a href="/ru/health/calories/">🥗 Калькулятор калорий</a>
+          <a href="/ru/health/weight/">📏 Идеальный вес</a>
+          <a href="/ru/health/pregnancy/">🤰 Калькулятор беременности</a>
+          <a href="/ru/health/">Все медицинские →</a>
+        </div>
+      </div>
+      <div class="nav-item">
+        <div class="nav-link">
+          <span class="dot" style="background:#d35400"></span>Строительство
+        </div>
+        <div class="dropdown">
+          <a href="/ru/construction/tiles/">🏗️ Калькулятор плитки</a>
+          <a href="/ru/construction/concrete/">🧱 Калькулятор бетона</a>
+          <a href="/ru/construction/paint/">🎨 Калькулятор краски</a>
+          <a href="/ru/construction/wallpaper/">🖼️ Калькулятор обоев</a>
+          <a href="/ru/construction/">Все строительные →</a>
+        </div>
+      </div>
+      <div class="nav-item">
+        <div class="nav-link">
+          <span class="dot" style="background:#6c3483"></span>Математика
+        </div>
+        <div class="dropdown">
+          <a href="/ru/math/percentage/">📊 Калькулятор процентов</a>
+          <a href="/ru/math/fractions/">➗ Калькулятор дробей</a>
+          <a href="/ru/math/power/">⚡ Степени и корни</a>
+          <a href="/ru/math/">Все математические →</a>
+        </div>
+      </div>
+      <div class="nav-item">
+        <div class="nav-link">
+          <span class="dot" style="background:#0e7f6a"></span>Конвертеры
+        </div>
+        <div class="dropdown">
+          <a href="/ru/converter/currency/">💱 Конвертер валют</a>
+          <a href="/ru/converter/units/">📐 Конвертер единиц</a>
+          <a href="/ru/converter/temperature/">🌡️ Конвертер температур</a>
+          <a href="/ru/converter/">Все конвертеры →</a>
+        </div>
+      </div>
+    </nav>
+    <div class="header-actions">
+      <div class="lang-switcher">
+        <button class="lang-btn" data-lang="uk" onclick="switchLang('uk')">УКР</button>
+        <button class="lang-btn active" data-lang="ru" onclick="switchLang('ru')">РУС</button>
+      </div>
+      <div class="burger" id="burger" onclick="toggleMenu()">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section class="hero">
+  <h1>Все калькуляторы<br><span>в одном месте</span></h1>
+  <p>Сотни бесплатных онлайн калькуляторов — от финансов до строительства. Быстро, точно, удобно.</p>
+  <div class="search-box">
+    <input type="text" placeholder="Найти калькулятор...">
+    <span class="search-icon">🔍</span>
+  </div>
+</section>
+
+<main class="main">
+
+  <h2 class="section-title">Популярные калькуляторы</h2>
+  <p class="section-subtitle">Самые используемые сегодня</p>
+  <div class="popular-grid">
+    <a href="/ru/finance/mortgage/" class="popular-card">
+      <div class="popular-icon" style="background:var(--finance-light)">🏠</div>
+      <div>
+        <div class="popular-name">Ипотечный калькулятор</div>
+        <div class="popular-desc">Ежемесячный платёж и переплата</div>
+      </div>
+    </a>
+    <a href="/ru/health/bmi/" class="popular-card">
+      <div class="popular-icon" style="background:var(--health-light)">⚖️</div>
+      <div>
+        <div class="popular-name">Калькулятор ИМТ</div>
+        <div class="popular-desc">Индекс массы тела</div>
+      </div>
+    </a>
+    <a href="/ru/finance/vat/" class="popular-card">
+      <div class="popular-icon" style="background:var(--finance-light)">💰</div>
+      <div>
+        <div class="popular-name">Калькулятор НДС</div>
+        <div class="popular-desc">Начисление и выделение НДС</div>
+      </div>
+    </a>
+    <a href="/ru/converter/currency/" class="popular-card">
+      <div class="popular-icon" style="background:var(--converter-light)">💱</div>
+      <div>
+        <div class="popular-name">Конвертер валют</div>
+        <div class="popular-desc">Курсы НБУ и международные</div>
+      </div>
+    </a>
+    <a href="/ru/health/calories/" class="popular-card">
+      <div class="popular-icon" style="background:var(--health-light)">🥗</div>
+      <div>
+        <div class="popular-name">Калькулятор калорий</div>
+        <div class="popular-desc">Дневная норма калорий</div>
+      </div>
+    </a>
+    <a href="/ru/construction/tiles/" class="popular-card">
+      <div class="popular-icon" style="background:var(--construction-light)">🏗️</div>
+      <div>
+        <div class="popular-name">Калькулятор плитки</div>
+        <div class="popular-desc">Количество и стоимость материалов</div>
+      </div>
+    </a>
+  </div>
+
+  <h2 class="section-title">Все категории</h2>
+  <p class="section-subtitle">Выберите нужную тематику</p>
+  <div class="categories-grid">
+    <a href="/ru/finance/" class="category-card cat-finance">
+      <div class="cat-header">
+        <div class="cat-icon">💰</div>
+        <div><div class="cat-title">Финансовые</div><span class="cat-count">24 калькулятора</span></div>
+      </div>
+      <div class="cat-list">
+        <span class="cat-tag">Ипотека</span><span class="cat-tag">Кредит</span>
+        <span class="cat-tag">Депозит</span><span class="cat-tag">НДС</span>
+        <span class="cat-tag">Зарплата</span><span class="cat-tag">Инвестиции</span>
+      </div>
+    </a>
+    <a href="/ru/health/" class="category-card cat-health">
+      <div class="cat-header">
+        <div class="cat-icon">❤️</div>
+        <div><div class="cat-title">Здоровье</div><span class="cat-count">18 калькуляторов</span></div>
+      </div>
+      <div class="cat-list">
+        <span class="cat-tag">ИМТ</span><span class="cat-tag">Калории</span>
+        <span class="cat-tag">Вес</span><span class="cat-tag">Пульс</span>
+        <span class="cat-tag">Беременность</span><span class="cat-tag">Возраст</span>
+      </div>
+    </a>
+    <a href="/ru/construction/" class="category-card cat-construction">
+      <div class="cat-header">
+        <div class="cat-icon">🏗️</div>
+        <div><div class="cat-title">Строительство</div><span class="cat-count">16 калькуляторов</span></div>
+      </div>
+      <div class="cat-list">
+        <span class="cat-tag">Плитка</span><span class="cat-tag">Бетон</span>
+        <span class="cat-tag">Краска</span><span class="cat-tag">Площадь</span>
+        <span class="cat-tag">Кирпич</span><span class="cat-tag">Обои</span>
+      </div>
+    </a>
+    <a href="/ru/math/" class="category-card cat-math">
+      <div class="cat-header">
+        <div class="cat-icon">📐</div>
+        <div><div class="cat-title">Математика</div><span class="cat-count">20 калькуляторов</span></div>
+      </div>
+      <div class="cat-list">
+        <span class="cat-tag">Проценты</span><span class="cat-tag">Дроби</span>
+        <span class="cat-tag">Степени</span><span class="cat-tag">Корень</span>
+        <span class="cat-tag">Уравнения</span>
+      </div>
+    </a>
+    <a href="/ru/converter/" class="category-card cat-converter">
+      <div class="cat-header">
+        <div class="cat-icon">🔄</div>
+        <div><div class="cat-title">Конвертеры</div><span class="cat-count">22 конвертера</span></div>
+      </div>
+      <div class="cat-list">
+        <span class="cat-tag">Валюта</span><span class="cat-tag">Единицы</span>
+        <span class="cat-tag">Температура</span><span class="cat-tag">Вес</span>
+        <span class="cat-tag">Длина</span>
+      </div>
+    </a>
+    <a href="/ru/other/" class="category-card cat-other">
+      <div class="cat-header">
+        <div class="cat-icon">⚡</div>
+        <div><div class="cat-title">Другие</div><span class="cat-count">14 калькуляторов</span></div>
+      </div>
+      <div class="cat-list">
+        <span class="cat-tag">Топливо</span><span class="cat-tag">Время</span>
+        <span class="cat-tag">Скорость</span><span class="cat-tag">Электричество</span>
+      </div>
+    </a>
+  </div>
+
+  <section class="seo-block" style="max-width:800px; margin: 0 auto 48px;">
+    <h2>Онлайн калькуляторы — CalcHub</h2>
+    <p>CalcHub — бесплатный сервис онлайн калькуляторов для решения повседневных задач. Наши калькуляторы помогают быстро и точно рассчитать ипотеку, ИМТ, конвертировать валюту и многое другое.</p>
+    <p>Все калькуляторы работают прямо в браузере, без регистрации и установки приложений. Доступны на украинском и русском языках.</p>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="logo">Calc<span>Hub</span></div>
+        <p>Бесплатные онлайн калькуляторы для решения повседневных задач. Быстро, точно, удобно.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Финансы</h4>
+        <a href="/ru/finance/mortgage/">Ипотека</a>
+        <a href="/ru/finance/credit/">Кредит</a>
+        <a href="/ru/finance/deposit/">Депозит</a>
+        <a href="/ru/finance/vat/">НДС</a>
+        <a href="/ru/finance/">Все →</a>
+      </div>
+      <div class="footer-col">
+        <h4>Здоровье</h4>
+        <a href="/ru/health/bmi/">ИМТ</a>
+        <a href="/ru/health/calories/">Калории</a>
+        <a href="/ru/health/weight/">Вес</a>
+        <a href="/ru/health/">Все →</a>
+      </div>
+      <div class="footer-col">
+        <h4>Информация</h4>
+        <a href="/ru/about/">О нас</a>
+        <a href="/ru/contact/">Контакты</a>
+        <a href="/ru/privacy/">Конфиденциальность</a>
+        <a href="/sitemap.xml">Sitemap</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2025 CalcHub. Все права защищены.</span>
+      <div class="footer-langs">
+        <a href="/uk/">🇺🇦 Українська</a>
+        <a href="/ru/">🇷🇺 Русский</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="/assets/js/main.js"></script>
+</body>
+</html>
