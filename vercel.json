@@ -3,6 +3,10 @@
   "trailingSlash": true,
   "rewrites": [
     { "source": "/", "destination": "/calchub/index.html" },
+    { "source": "/uk", "destination": "/calchub/uk/index.html" },
+    { "source": "/ru", "destination": "/calchub/ru/index.html" },
+    { "source": "/uk/(.*)", "destination": "/calchub/uk/$1" },
+    { "source": "/ru/(.*)", "destination": "/calchub/ru/$1" },
     { "source": "/(.*)", "destination": "/calchub/$1" }
   ],
   "headers": [
