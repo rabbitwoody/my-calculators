@@ -850,12 +850,9 @@
 <script>
   // Перемикач мови
   function switchLang(lang) {
-    const btns = document.querySelectorAll('.lang-btn');
-    btns.forEach(b => b.classList.remove('active'));
-    event.target.classList.add('active');
-    const path = window.location.pathname.replace(/^\/(uk|ru)/, '/' + lang);
-    window.location.href = path;
-  }
+  localStorage.setItem('lang', lang);
+  window.location.href = '/calchub/' + lang + '/';
+}
 
   // Бургер меню
   function toggleMenu() {
