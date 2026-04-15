@@ -846,10 +846,16 @@
     </div>
   </div>
 </footer>
-<script src="/calchub/assets/js/main.js"></script>
+
 <script>
   // Перемикач мови
-
+function switchLang(lang) {
+    const btns = document.querySelectorAll('.lang-btn');
+    btns.forEach(b => b.classList.remove('active'));
+    event.target.classList.add('active');
+    const path = window.location.pathname.replace(/^\/(uk|ru)/, '/' + lang);
+    window.location.href = path;
+  }
 
   // Бургер меню
   function toggleMenu() {

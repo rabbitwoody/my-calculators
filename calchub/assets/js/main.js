@@ -7,11 +7,15 @@ function switchLang(lang) {
   localStorage.setItem('lang', lang);
   const currentPath = window.location.pathname;
 
-  // Знаходимо базову частину (все до /uk/ або /ru/)
-  const base = currentPath.replace(/\/(uk|ru)\/.*$/, '');
-  const rest = currentPath.replace(/^.*?\/(uk|ru)\//, '');
+  let newPath;
+  if (/^\/(uk|ru)(\/|$)/.test(currentPath)) {
+    newPath = currentPath.replace(/^\/(uk|ru)/, '/' + lang);
+  } else {
+    newPath = '/' + lang + '/';
+  }
 
-  window.location.href = base + '/' + lang + '/' + rest;
+  if (!newPath.endsWith('/')) newPath += '/';
+  window.location.href = newPath;
 }
 
 /* ===== ІНІЦІАЛІЗАЦІЯ ПРИ ЗАВАНТАЖЕННІ ===== */
