@@ -156,9 +156,13 @@ img { max-width: 100%; height: auto; }
   transition: all 0.2s;
 }
 .lang-btn.active {
-  background: var(--bg-white);
-  color: var(--text-dark);
+  background: var(--finance-primary);
+  color: #ffffff;
   box-shadow: var(--shadow);
+}
+a.lang-btn.active {
+  background: var(--finance-primary);
+  color: #ffffff !important;
 }
 
 /* Бургер */
