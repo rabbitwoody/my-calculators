@@ -2,40 +2,7 @@
    CalcHub — Головний файл скриптів
    ============================================ */
 
-/* ===== МОВНИЙ ПЕРЕМИКАЧ ===== */
-function switchLang(lang) {
-  localStorage.setItem('lang', lang);
-  const currentPath = window.location.pathname;
-
-  let newPath;
-  if (/^\/(uk|ru)(\/|$)/.test(currentPath)) {
-    newPath = currentPath.replace(/^\/(uk|ru)/, '/' + lang);
-  } else {
-    newPath = '/' + lang + '/';
-  }
-
-  if (!newPath.endsWith('/')) newPath += '/';
-  window.location.href = newPath;
-}
-
-/* ===== ІНІЦІАЛІЗАЦІЯ ПРИ ЗАВАНТАЖЕННІ ===== */
 document.addEventListener('DOMContentLoaded', function() {
-
-  // Підсвічуємо активну кнопку мови
-  const currentLang = window.location.pathname.includes('/ru') ? 'ru' : 'uk';
-  document.querySelectorAll('.lang-btn').forEach(function(btn) {
-    btn.classList.toggle('active', btn.dataset.lang === currentLang);
-  });
-
-  // Вішаємо обробники на кнопки (надійніше ніж onclick в HTML)
-  document.querySelectorAll('.lang-btn').forEach(function(btn) {
-    btn.addEventListener('click', function() {
-      const lang = this.dataset.lang;
-      if (lang) switchLang(lang);
-    });
-  });
-
-  // FAQ акордеон
   initFAQ();
 });
 
