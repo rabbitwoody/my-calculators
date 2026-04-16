@@ -157,12 +157,12 @@ img { max-width: 100%; height: auto; }
 }
 .lang-btn.active {
   background: var(--finance-primary);
-  color: #ffffff;
+  color: #544848;
   box-shadow: var(--shadow);
 }
 a.lang-btn.active {
   background: var(--finance-primary);
-  color: #ffffff !important;
+  color: #544848 !important;
 }
 
 /* Бургер */
