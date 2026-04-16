@@ -4,7 +4,19 @@
 
 document.addEventListener('DOMContentLoaded', function() {
   initFAQ();
+  highlightActiveLang();
 });
+
+function highlightActiveLang() {
+  const path = window.location.pathname;
+  const currentLang = path.startsWith('/ru') ? 'ru' : 'uk';
+
+  document.querySelectorAll('.lang-btn').forEach(function(btn) {
+    const href = btn.getAttribute('href') || '';
+    const btnLang = href.startsWith('/ru') ? 'ru' : 'uk';
+    btn.classList.toggle('active', btnLang === currentLang);
+  });
+}
 
 /* ===== БУРГЕР МЕНЮ ===== */
 function toggleMenu() {
