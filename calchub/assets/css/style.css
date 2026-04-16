@@ -156,13 +156,14 @@ img { max-width: 100%; height: auto; }
   transition: all 0.2s;
 }
 .lang-btn.active {
-  background: var(--finance-primary);
-  color: #544848;
-  box-shadow: var(--shadow);
+  background: #1a6eb5;
+  color: #ffffff;
+  box-shadow: 0 2px 8px rgba(26,110,181,0.4);
 }
 a.lang-btn.active {
-  background: var(--finance-primary);
-  color: #544848 !important;
+  background: #1a6eb5 !important;
+  color: #ffffff !important;
+  text-decoration: none;
 }
 
 /* Бургер */
@@ -669,3 +670,7 @@ a.lang-btn.active {
   .header-actions .lang-switcher { display: none; }
   .main { padding: 32px 16px; }
 }
+
+/* lang-btn працює і як <button> і як <a> */
+a.lang-btn { text-decoration: none; display: inline-block; line-height: 1.6; }
+a.lang-btn:hover { color: var(--text-dark); }

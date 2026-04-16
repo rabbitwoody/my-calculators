@@ -8,13 +8,17 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 function highlightActiveLang() {
-  const path = window.location.pathname;
-  const currentLang = path.startsWith('/ru') ? 'ru' : 'uk';
-
-  document.querySelectorAll('.lang-btn').forEach(function(btn) {
-    const href = btn.getAttribute('href') || '';
-    const btnLang = href.startsWith('/ru') ? 'ru' : 'uk';
-    btn.classList.toggle('active', btnLang === currentLang);
+  var path = window.location.pathname;
+  var currentLang = path.indexOf('/ru') === 0 ? 'ru' : 'uk';
+  document.querySelectorAll('a.lang-btn').forEach(function(btn) {
+    var href = btn.getAttribute('href') || '';
+    var isRu = href.indexOf('/ru') === 0;
+    var btnLang = isRu ? 'ru' : 'uk';
+    if (btnLang === currentLang) {
+      btn.classList.add('active');
+    } else {
+      btn.classList.remove('active');
+    }
   });
 }
 
