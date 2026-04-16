@@ -9,11 +9,18 @@ document.addEventListener('DOMContentLoaded', function() {
 
 function highlightActiveLang() {
   var path = window.location.pathname;
-  var currentLang = path.indexOf('/ru') === 0 ? 'ru' : 'uk';
-  document.querySelectorAll('a.lang-btn').forEach(function(btn) {
+
+  var currentLang = 'uk';
+  if (path.startsWith('/ru')) currentLang = 'ru';
+  if (path.startsWith('/uk')) currentLang = 'uk';
+
+  document.querySelectorAll('.lang-btn').forEach(function(btn) {
     var href = btn.getAttribute('href') || '';
-    var isRu = href.indexOf('/ru') === 0;
-    var btnLang = isRu ? 'ru' : 'uk';
+
+    var btnLang = 'uk';
+    if (href.startsWith('/ru')) btnLang = 'ru';
+    if (href.startsWith('/uk')) btnLang = 'uk';
+
     if (btnLang === currentLang) {
       btn.classList.add('active');
     } else {
