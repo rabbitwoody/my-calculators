@@ -164,6 +164,7 @@ a.lang-btn.active {
   background: #1a6eb5 !important;
   color: #ffffff !important;
   text-decoration: none;
+  box-shadow: 0 2px 8px rgba(26,110,181,0.4);
 }
 
 /* Бургер */
