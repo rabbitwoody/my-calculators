@@ -140,31 +140,36 @@ img { max-width: 100%; height: auto; }
 .lang-switcher {
   display: flex;
   gap: 4px;
-  background: var(--bg-page);
+  background: #eef2f7;
   border-radius: var(--radius-sm);
   padding: 4px;
+  border: 1px solid var(--border);
 }
 .lang-btn {
-  padding: 4px 12px;
+  padding: 5px 14px;
   border-radius: 6px;
   font-size: 13px;
-  font-weight: 600;
+  font-weight: 700;
   cursor: pointer;
   border: none;
   background: transparent;
-  color: var(--text-mid);
+  color: #888;
   transition: all 0.2s;
-}
-.lang-btn.active {
-  background: #1a6eb5;
-  color: #ffffff;
-  box-shadow: 0 2px 8px rgba(26,110,181,0.4);
-}
-a.lang-btn.active {
-  background: #1a6eb5 !important;
-  color: #ffffff !important;
   text-decoration: none;
-  box-shadow: 0 2px 8px rgba(26,110,181,0.4);
+  display: inline-block;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+}
+.lang-btn:hover {
+  color: var(--text-dark);
+  background: rgba(255,255,255,0.6);
+}
+.lang-btn.active,
+a.lang-btn.active {
+  background: #1a6eb5;
+  color: #ffffff !important;
+  box-shadow: 0 2px 6px rgba(26,110,181,0.35);
+  text-decoration: none;
 }
 
 /* Бургер */
