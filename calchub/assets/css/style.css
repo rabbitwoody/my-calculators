@@ -94,7 +94,7 @@ img { max-width: 100%; height: auto; }
   display: flex;
   align-items: center;
   gap: 6px;
-  padding: 0px 14px;
+  padding: 8px 14px;
   border-radius: var(--radius-sm);
   font-size: 14px;
   font-weight: 600;
@@ -125,7 +125,7 @@ img { max-width: 100%; height: auto; }
   border-radius: var(--radius);
   box-shadow: var(--shadow-hover);
   min-width: 220px;
-  padding: 8px;
+  padding: 0px;
 }
 .nav-item:hover .dropdown { display: block; }
 .dropdown a {
