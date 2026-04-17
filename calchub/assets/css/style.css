@@ -94,7 +94,7 @@ img { max-width: 100%; height: auto; }
   display: flex;
   align-items: center;
   gap: 6px;
-  padding: 8px 14px;
+  padding: 0px 14px;
   border-radius: var(--radius-sm);
   font-size: 14px;
   font-weight: 600;
@@ -115,7 +115,7 @@ img { max-width: 100%; height: auto; }
   position: absolute;
   top: 100%;
   left: 0;
-  padding-top: 0px;
+  padding-top: 8px;
   display: none;
   z-index: 2000;
 }
