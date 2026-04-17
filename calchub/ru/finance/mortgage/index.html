@@ -50,57 +50,70 @@
         <div class="nav-link">
           <span class="dot" style="background:#1a6eb5"></span>Финансы
         </div>
-        <div class="dropdown">
+        <div class="dropdown"><div class="dropdown-inner">
           <a href="/ru/finance/mortgage/">🏠 Ипотечный калькулятор</a>
           <a href="/ru/finance/credit/">💳 Кредитный калькулятор</a>
           <a href="/ru/finance/deposit/">🏦 Калькулятор депозита</a>
           <a href="/ru/finance/vat/">🧾 Калькулятор НДС</a>
           <a href="/ru/finance/salary/">💵 Калькулятор зарплаты</a>
           <a href="/ru/finance/">Все финансовые →</a>
-        </div>
+        </div></div>
       </div>
       <div class="nav-item">
         <div class="nav-link">
           <span class="dot" style="background:#c0392b"></span>Здоровье
         </div>
-        <div class="dropdown">
+        <div class="dropdown"><div class="dropdown-inner">
           <a href="/ru/health/bmi/">⚖️ Калькулятор ИМТ</a>
           <a href="/ru/health/calories/">🥗 Калькулятор калорий</a>
           <a href="/ru/health/">Все медицинские →</a>
-        </div>
+        </div></div>
       </div>
       <div class="nav-item">
         <div class="nav-link">
           <span class="dot" style="background:#d35400"></span>Строительство
         </div>
-        <div class="dropdown">
+        <div class="dropdown"><div class="dropdown-inner">
           <a href="/ru/construction/tiles/">🏗️ Калькулятор плитки</a>
           <a href="/ru/construction/">Все строительные →</a>
-        </div>
+        </div></div>
       </div>
       <div class="nav-item">
         <div class="nav-link">
           <span class="dot" style="background:#6c3483"></span>Математика
         </div>
-        <div class="dropdown">
+        <div class="dropdown"><div class="dropdown-inner">
           <a href="/ru/math/percentage/">📊 Калькулятор процентов</a>
           <a href="/ru/math/">Все математические →</a>
-        </div>
+        </div></div>
       </div>
       <div class="nav-item">
         <div class="nav-link">
           <span class="dot" style="background:#0e7f6a"></span>Конвертеры
         </div>
-        <div class="dropdown">
+        <div class="dropdown"><div class="dropdown-inner">
           <a href="/ru/converter/currency/">💱 Конвертер валют</a>
           <a href="/ru/converter/">Все конвертеры →</a>
-        </div>
+        </div></div>
       </div>
     </nav>
     <div class="header-actions">
       <div class="lang-switcher">
-        <a class="lang-btn" href="/uk/finance/mortgage/">УКР</a>
-        <a class="lang-btn active" href="/ru/finance/mortgage/">РУС</a>
+        <div class="lang-current">
+          <span class="lang-flag">🇷🇺</span>
+          РУС
+          <span class="arrow">▼</span>
+        </div>
+        <div class="lang-dropdown">
+          <div class="lang-dropdown-inner">
+            <a class="lang-btn" href="/uk/finance/mortgage/">
+              <span class="lang-flag">🇺🇦</span> Українська
+            </a>
+            <a class="lang-btn active" href="/ru/finance/mortgage/">
+              <span class="lang-flag">🇷🇺</span> Русский <span class="lang-check">✓</span>
+            </a>
+          </div>
+        </div>
       </div>
       <div class="burger" id="burger" onclick="toggleMenu()">
         <span></span><span></span><span></span>

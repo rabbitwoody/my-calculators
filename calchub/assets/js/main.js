@@ -4,23 +4,7 @@
 
 document.addEventListener('DOMContentLoaded', function() {
   initFAQ();
-  highlightActiveLang();
 });
-
-function highlightActiveLang() {
-  var path = window.location.pathname;
-  var currentLang = path.indexOf('/ru') === 0 ? 'ru' : 'uk';
-  document.querySelectorAll('a.lang-btn').forEach(function(btn) {
-    var href = btn.getAttribute('href') || '';
-    var isRu = href.indexOf('/ru') === 0;
-    var btnLang = isRu ? 'ru' : 'uk';
-    if (btnLang === currentLang) {
-      btn.classList.add('active');
-    } else {
-      btn.classList.remove('active');
-    }
-  });
-}
 
 /* ===== БУРГЕР МЕНЮ ===== */
 function toggleMenu() {
