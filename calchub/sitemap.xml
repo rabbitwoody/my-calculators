@@ -1,0 +1,744 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+  <url>
+    <loc>https://calc-space.online/uk/</loc>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://calc-space.online/uk/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://calc-space.online/ru/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://calc-space.online/uk/"/>
+    <lastmod>2026-04-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://calc-space.online/ru/</loc>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://calc-space.online/uk/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://calc-space.online/ru/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://calc-space.online/uk/"/>
+    <lastmod>2026-04-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://calc-space.online/uk/finance/</loc>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://calc-space.online/uk/finance/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://calc-space.online/ru/finance/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://calc-space.online/uk/finance/"/>
+    <lastmod>2026-04-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://calc-space.online/ru/finance/</loc>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://calc-space.online/uk/finance/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://calc-space.online/ru/finance/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://calc-space.online/uk/finance/"/>
+    <lastmod>2026-04-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://calc-space.online/uk/health/</loc>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://calc-space.online/uk/health/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://calc-space.online/ru/health/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://calc-space.online/uk/health/"/>
+    <lastmod>2026-04-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://calc-space.online/ru/health/</loc>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://calc-space.online/uk/health/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://calc-space.online/ru/health/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://calc-space.online/uk/health/"/>
+    <lastmod>2026-04-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://calc-space.online/uk/construction/</loc>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://calc-space.online/uk/construction/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://calc-space.online/ru/construction/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://calc-space.online/uk/construction/"/>
+    <lastmod>2026-04-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://calc-space.online/ru/construction/</loc>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://calc-space.online/uk/construction/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://calc-space.online/ru/construction/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://calc-space.online/uk/construction/"/>
+    <lastmod>2026-04-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://calc-space.online/uk/math/</loc>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://calc-space.online/uk/math/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://calc-space.online/ru/math/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://calc-space.online/uk/math/"/>
+    <lastmod>2026-04-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://calc-space.online/ru/math/</loc>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://calc-space.online/uk/math/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://calc-space.online/ru/math/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://calc-space.online/uk/math/"/>
+    <lastmod>2026-04-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://calc-space.online/uk/converter/</loc>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://calc-space.online/uk/converter/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://calc-space.online/ru/converter/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://calc-space.online/uk/converter/"/>
+    <lastmod>2026-04-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://calc-space.online/ru/converter/</loc>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://calc-space.online/uk/converter/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://calc-space.online/ru/converter/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://calc-space.online/uk/converter/"/>
+    <lastmod>2026-04-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://calc-space.online/uk/other/</loc>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://calc-space.online/uk/other/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://calc-space.online/ru/other/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://calc-space.online/uk/other/"/>
+    <lastmod>2026-04-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://calc-space.online/ru/other/</loc>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://calc-space.online/uk/other/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://calc-space.online/ru/other/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://calc-space.online/uk/other/"/>
+    <lastmod>2026-04-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://calc-space.online/uk/finance/mortgage/</loc>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://calc-space.online/uk/finance/mortgage/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://calc-space.online/ru/finance/mortgage/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://calc-space.online/uk/finance/mortgage/"/>
+    <lastmod>2026-04-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://calc-space.online/ru/finance/mortgage/</loc>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://calc-space.online/uk/finance/mortgage/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://calc-space.online/ru/finance/mortgage/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://calc-space.online/uk/finance/mortgage/"/>
+    <lastmod>2026-04-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://calc-space.online/uk/finance/credit/</loc>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://calc-space.online/uk/finance/credit/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://calc-space.online/ru/finance/credit/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://calc-space.online/uk/finance/credit/"/>
+    <lastmod>2026-04-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://calc-space.online/ru/finance/credit/</loc>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://calc-space.online/uk/finance/credit/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://calc-space.online/ru/finance/credit/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://calc-space.online/uk/finance/credit/"/>
+    <lastmod>2026-04-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://calc-space.online/uk/finance/deposit/</loc>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://calc-space.online/uk/finance/deposit/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://calc-space.online/ru/finance/deposit/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://calc-space.online/uk/finance/deposit/"/>
+    <lastmod>2026-04-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://calc-space.online/ru/finance/deposit/</loc>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://calc-space.online/uk/finance/deposit/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://calc-space.online/ru/finance/deposit/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://calc-space.online/uk/finance/deposit/"/>
+    <lastmod>2026-04-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://calc-space.online/uk/finance/vat/</loc>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://calc-space.online/uk/finance/vat/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://calc-space.online/ru/finance/vat/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://calc-space.online/uk/finance/vat/"/>
+    <lastmod>2026-04-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://calc-space.online/ru/finance/vat/</loc>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://calc-space.online/uk/finance/vat/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://calc-space.online/ru/finance/vat/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://calc-space.online/uk/finance/vat/"/>
+    <lastmod>2026-04-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://calc-space.online/uk/finance/salary/</loc>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://calc-space.online/uk/finance/salary/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://calc-space.online/ru/finance/salary/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://calc-space.online/uk/finance/salary/"/>
+    <lastmod>2026-04-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://calc-space.online/ru/finance/salary/</loc>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://calc-space.online/uk/finance/salary/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://calc-space.online/ru/finance/salary/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://calc-space.online/uk/finance/salary/"/>
+    <lastmod>2026-04-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://calc-space.online/uk/finance/leasing/</loc>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://calc-space.online/uk/finance/leasing/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://calc-space.online/ru/finance/leasing/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://calc-space.online/uk/finance/leasing/"/>
+    <lastmod>2026-04-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://calc-space.online/ru/finance/leasing/</loc>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://calc-space.online/uk/finance/leasing/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://calc-space.online/ru/finance/leasing/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://calc-space.online/uk/finance/leasing/"/>
+    <lastmod>2026-04-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://calc-space.online/uk/finance/investment/</loc>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://calc-space.online/uk/finance/investment/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://calc-space.online/ru/finance/investment/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://calc-space.online/uk/finance/investment/"/>
+    <lastmod>2026-04-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://calc-space.online/ru/finance/investment/</loc>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://calc-space.online/uk/finance/investment/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://calc-space.online/ru/finance/investment/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://calc-space.online/uk/finance/investment/"/>
+    <lastmod>2026-04-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://calc-space.online/uk/health/bmi/</loc>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://calc-space.online/uk/health/bmi/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://calc-space.online/ru/health/bmi/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://calc-space.online/uk/health/bmi/"/>
+    <lastmod>2026-04-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://calc-space.online/ru/health/bmi/</loc>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://calc-space.online/uk/health/bmi/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://calc-space.online/ru/health/bmi/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://calc-space.online/uk/health/bmi/"/>
+    <lastmod>2026-04-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://calc-space.online/uk/health/calories/</loc>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://calc-space.online/uk/health/calories/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://calc-space.online/ru/health/calories/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://calc-space.online/uk/health/calories/"/>
+    <lastmod>2026-04-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://calc-space.online/ru/health/calories/</loc>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://calc-space.online/uk/health/calories/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://calc-space.online/ru/health/calories/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://calc-space.online/uk/health/calories/"/>
+    <lastmod>2026-04-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://calc-space.online/uk/health/pregnancy/</loc>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://calc-space.online/uk/health/pregnancy/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://calc-space.online/ru/health/pregnancy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://calc-space.online/uk/health/pregnancy/"/>
+    <lastmod>2026-04-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://calc-space.online/ru/health/pregnancy/</loc>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://calc-space.online/uk/health/pregnancy/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://calc-space.online/ru/health/pregnancy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://calc-space.online/uk/health/pregnancy/"/>
+    <lastmod>2026-04-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://calc-space.online/uk/health/weight/</loc>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://calc-space.online/uk/health/weight/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://calc-space.online/ru/health/weight/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://calc-space.online/uk/health/weight/"/>
+    <lastmod>2026-04-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://calc-space.online/ru/health/weight/</loc>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://calc-space.online/uk/health/weight/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://calc-space.online/ru/health/weight/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://calc-space.online/uk/health/weight/"/>
+    <lastmod>2026-04-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://calc-space.online/uk/health/water/</loc>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://calc-space.online/uk/health/water/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://calc-space.online/ru/health/water/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://calc-space.online/uk/health/water/"/>
+    <lastmod>2026-04-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://calc-space.online/ru/health/water/</loc>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://calc-space.online/uk/health/water/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://calc-space.online/ru/health/water/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://calc-space.online/uk/health/water/"/>
+    <lastmod>2026-04-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://calc-space.online/uk/health/pulse/</loc>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://calc-space.online/uk/health/pulse/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://calc-space.online/ru/health/pulse/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://calc-space.online/uk/health/pulse/"/>
+    <lastmod>2026-04-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://calc-space.online/ru/health/pulse/</loc>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://calc-space.online/uk/health/pulse/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://calc-space.online/ru/health/pulse/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://calc-space.online/uk/health/pulse/"/>
+    <lastmod>2026-04-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://calc-space.online/uk/health/age/</loc>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://calc-space.online/uk/health/age/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://calc-space.online/ru/health/age/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://calc-space.online/uk/health/age/"/>
+    <lastmod>2026-04-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://calc-space.online/ru/health/age/</loc>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://calc-space.online/uk/health/age/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://calc-space.online/ru/health/age/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://calc-space.online/uk/health/age/"/>
+    <lastmod>2026-04-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://calc-space.online/uk/construction/tiles/</loc>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://calc-space.online/uk/construction/tiles/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://calc-space.online/ru/construction/tiles/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://calc-space.online/uk/construction/tiles/"/>
+    <lastmod>2026-04-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://calc-space.online/ru/construction/tiles/</loc>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://calc-space.online/uk/construction/tiles/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://calc-space.online/ru/construction/tiles/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://calc-space.online/uk/construction/tiles/"/>
+    <lastmod>2026-04-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://calc-space.online/uk/construction/concrete/</loc>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://calc-space.online/uk/construction/concrete/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://calc-space.online/ru/construction/concrete/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://calc-space.online/uk/construction/concrete/"/>
+    <lastmod>2026-04-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://calc-space.online/ru/construction/concrete/</loc>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://calc-space.online/uk/construction/concrete/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://calc-space.online/ru/construction/concrete/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://calc-space.online/uk/construction/concrete/"/>
+    <lastmod>2026-04-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://calc-space.online/uk/construction/paint/</loc>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://calc-space.online/uk/construction/paint/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://calc-space.online/ru/construction/paint/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://calc-space.online/uk/construction/paint/"/>
+    <lastmod>2026-04-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://calc-space.online/ru/construction/paint/</loc>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://calc-space.online/uk/construction/paint/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://calc-space.online/ru/construction/paint/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://calc-space.online/uk/construction/paint/"/>
+    <lastmod>2026-04-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://calc-space.online/uk/construction/brick/</loc>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://calc-space.online/uk/construction/brick/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://calc-space.online/ru/construction/brick/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://calc-space.online/uk/construction/brick/"/>
+    <lastmod>2026-04-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://calc-space.online/ru/construction/brick/</loc>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://calc-space.online/uk/construction/brick/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://calc-space.online/ru/construction/brick/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://calc-space.online/uk/construction/brick/"/>
+    <lastmod>2026-04-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://calc-space.online/uk/construction/wallpaper/</loc>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://calc-space.online/uk/construction/wallpaper/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://calc-space.online/ru/construction/wallpaper/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://calc-space.online/uk/construction/wallpaper/"/>
+    <lastmod>2026-04-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://calc-space.online/ru/construction/wallpaper/</loc>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://calc-space.online/uk/construction/wallpaper/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://calc-space.online/ru/construction/wallpaper/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://calc-space.online/uk/construction/wallpaper/"/>
+    <lastmod>2026-04-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://calc-space.online/uk/construction/area/</loc>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://calc-space.online/uk/construction/area/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://calc-space.online/ru/construction/area/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://calc-space.online/uk/construction/area/"/>
+    <lastmod>2026-04-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://calc-space.online/ru/construction/area/</loc>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://calc-space.online/uk/construction/area/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://calc-space.online/ru/construction/area/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://calc-space.online/uk/construction/area/"/>
+    <lastmod>2026-04-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://calc-space.online/uk/math/percentage/</loc>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://calc-space.online/uk/math/percentage/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://calc-space.online/ru/math/percentage/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://calc-space.online/uk/math/percentage/"/>
+    <lastmod>2026-04-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://calc-space.online/ru/math/percentage/</loc>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://calc-space.online/uk/math/percentage/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://calc-space.online/ru/math/percentage/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://calc-space.online/uk/math/percentage/"/>
+    <lastmod>2026-04-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://calc-space.online/uk/math/fractions/</loc>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://calc-space.online/uk/math/fractions/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://calc-space.online/ru/math/fractions/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://calc-space.online/uk/math/fractions/"/>
+    <lastmod>2026-04-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://calc-space.online/ru/math/fractions/</loc>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://calc-space.online/uk/math/fractions/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://calc-space.online/ru/math/fractions/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://calc-space.online/uk/math/fractions/"/>
+    <lastmod>2026-04-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://calc-space.online/uk/math/power/</loc>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://calc-space.online/uk/math/power/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://calc-space.online/ru/math/power/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://calc-space.online/uk/math/power/"/>
+    <lastmod>2026-04-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://calc-space.online/ru/math/power/</loc>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://calc-space.online/uk/math/power/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://calc-space.online/ru/math/power/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://calc-space.online/uk/math/power/"/>
+    <lastmod>2026-04-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://calc-space.online/uk/math/proportion/</loc>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://calc-space.online/uk/math/proportion/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://calc-space.online/ru/math/proportion/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://calc-space.online/uk/math/proportion/"/>
+    <lastmod>2026-04-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://calc-space.online/ru/math/proportion/</loc>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://calc-space.online/uk/math/proportion/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://calc-space.online/ru/math/proportion/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://calc-space.online/uk/math/proportion/"/>
+    <lastmod>2026-04-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://calc-space.online/uk/math/average/</loc>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://calc-space.online/uk/math/average/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://calc-space.online/ru/math/average/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://calc-space.online/uk/math/average/"/>
+    <lastmod>2026-04-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://calc-space.online/ru/math/average/</loc>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://calc-space.online/uk/math/average/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://calc-space.online/ru/math/average/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://calc-space.online/uk/math/average/"/>
+    <lastmod>2026-04-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://calc-space.online/uk/converter/currency/</loc>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://calc-space.online/uk/converter/currency/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://calc-space.online/ru/converter/currency/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://calc-space.online/uk/converter/currency/"/>
+    <lastmod>2026-04-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://calc-space.online/ru/converter/currency/</loc>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://calc-space.online/uk/converter/currency/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://calc-space.online/ru/converter/currency/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://calc-space.online/uk/converter/currency/"/>
+    <lastmod>2026-04-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://calc-space.online/uk/converter/temperature/</loc>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://calc-space.online/uk/converter/temperature/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://calc-space.online/ru/converter/temperature/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://calc-space.online/uk/converter/temperature/"/>
+    <lastmod>2026-04-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://calc-space.online/ru/converter/temperature/</loc>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://calc-space.online/uk/converter/temperature/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://calc-space.online/ru/converter/temperature/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://calc-space.online/uk/converter/temperature/"/>
+    <lastmod>2026-04-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://calc-space.online/uk/converter/length/</loc>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://calc-space.online/uk/converter/length/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://calc-space.online/ru/converter/length/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://calc-space.online/uk/converter/length/"/>
+    <lastmod>2026-04-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://calc-space.online/ru/converter/length/</loc>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://calc-space.online/uk/converter/length/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://calc-space.online/ru/converter/length/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://calc-space.online/uk/converter/length/"/>
+    <lastmod>2026-04-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://calc-space.online/uk/converter/weight/</loc>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://calc-space.online/uk/converter/weight/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://calc-space.online/ru/converter/weight/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://calc-space.online/uk/converter/weight/"/>
+    <lastmod>2026-04-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://calc-space.online/ru/converter/weight/</loc>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://calc-space.online/uk/converter/weight/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://calc-space.online/ru/converter/weight/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://calc-space.online/uk/converter/weight/"/>
+    <lastmod>2026-04-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://calc-space.online/uk/converter/volume/</loc>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://calc-space.online/uk/converter/volume/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://calc-space.online/ru/converter/volume/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://calc-space.online/uk/converter/volume/"/>
+    <lastmod>2026-04-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://calc-space.online/ru/converter/volume/</loc>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://calc-space.online/uk/converter/volume/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://calc-space.online/ru/converter/volume/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://calc-space.online/uk/converter/volume/"/>
+    <lastmod>2026-04-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://calc-space.online/uk/other/discount/</loc>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://calc-space.online/uk/other/discount/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://calc-space.online/ru/other/discount/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://calc-space.online/uk/other/discount/"/>
+    <lastmod>2026-04-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://calc-space.online/ru/other/discount/</loc>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://calc-space.online/uk/other/discount/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://calc-space.online/ru/other/discount/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://calc-space.online/uk/other/discount/"/>
+    <lastmod>2026-04-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://calc-space.online/uk/other/fuel/</loc>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://calc-space.online/uk/other/fuel/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://calc-space.online/ru/other/fuel/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://calc-space.online/uk/other/fuel/"/>
+    <lastmod>2026-04-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://calc-space.online/ru/other/fuel/</loc>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://calc-space.online/uk/other/fuel/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://calc-space.online/ru/other/fuel/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://calc-space.online/uk/other/fuel/"/>
+    <lastmod>2026-04-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://calc-space.online/uk/other/date/</loc>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://calc-space.online/uk/other/date/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://calc-space.online/ru/other/date/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://calc-space.online/uk/other/date/"/>
+    <lastmod>2026-04-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://calc-space.online/ru/other/date/</loc>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://calc-space.online/uk/other/date/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://calc-space.online/ru/other/date/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://calc-space.online/uk/other/date/"/>
+    <lastmod>2026-04-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://calc-space.online/uk/other/electricity/</loc>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://calc-space.online/uk/other/electricity/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://calc-space.online/ru/other/electricity/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://calc-space.online/uk/other/electricity/"/>
+    <lastmod>2026-04-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://calc-space.online/ru/other/electricity/</loc>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://calc-space.online/uk/other/electricity/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://calc-space.online/ru/other/electricity/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://calc-space.online/uk/other/electricity/"/>
+    <lastmod>2026-04-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+</urlset>
