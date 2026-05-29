@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://calcSpace.com/sitemap.xml
+Sitemap: https://calc-space.online/sitemap.xml
