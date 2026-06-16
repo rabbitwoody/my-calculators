@@ -126,32 +126,41 @@
   <div class="calc-layout">
     <div class="calc-card">
       <h2>Параметри</h2>
-      
+
       <div class="form-group">
-        <label>Вартість автомобіля (₴)</label>
+        <label for="leaseCar">Вартість автомобіля (₴)</label>
         <input type="number" id="leaseCar" value="800000" min="10000">
       </div>
       <div class="form-group">
-        <label>Аванс (%)</label>
+        <label for="leaseDown">Аванс (%)</label>
         <input type="number" id="leaseDown" value="20" min="0" max="90" step="1">
       </div>
       <div class="form-group">
-        <label>Строк лізингу (місяців)</label>
+        <label for="leaseTerm">Строк лізингу (місяців)</label>
         <input type="number" id="leaseTerm" value="36" min="12" max="84">
       </div>
       <div class="form-group">
-        <label>Відсоткова ставка (% річних)</label>
+        <label for="leaseRate">Відсоткова ставка (% річних)</label>
         <input type="number" id="leaseRate" value="16" min="1" max="50" step="0.1">
       </div>
-      <div class="form-group">
-        <label>Залишкова вартість (%)</label>
-        <input type="number" id="leaseResidual" value="0" min="0" max="60" step="1">
+
+      <button type="button" id="leaseAdvancedToggle" onclick="toggleLeaseAdvanced()" style="background:none;border:none;color:var(--finance-primary);font-size:14px;font-weight:600;padding:4px 0;margin-bottom:12px;cursor:pointer;display:flex;align-items:center;gap:6px;">
+        <span id="leaseAdvancedArrow">▼</span> Розширені параметри
+      </button>
+      <div id="leaseAdvancedBlock">
+        <div class="form-group">
+          <label for="leaseResidual">Залишкова вартість / викуп наприкінці (%)</label>
+          <input type="number" id="leaseResidual" value="0" min="0" max="60" step="1">
+          <div style="font-size:12px;color:var(--text-light);margin-top:4px;">Якщо не знаєте, що це — залиште 0%. Це для договорів з одноразовим платежем за викуп авто в кінці строку (баллонний платіж). Більшість лізингових пропозицій в Україні для фізосіб не передбачає залишкової вартості.</div>
+        </div>
       </div>
+
+      <div id="leaseError" style="display:none;color:#c0392b;font-size:14px;margin-top:4px;"></div>
       <button class="calc-btn calc-btn-finance" onclick="calcLease()">Розрахувати лізинг</button>
     </div>
     <div class="result-card">
       <h2>Результат</h2>
-      
+
       <div class="result-main result-finance" id="leaseResult" style="display:none">
         <div class="result-label">Щомісячний платіж</div>
         <div class="result-value" id="leaseMonthly">—</div>
@@ -159,10 +168,61 @@
       <div class="result-row"><span>Вартість авто</span><span id="leaseCost">—</span></div>
       <div class="result-row"><span>Авансовий платіж</span><span id="leaseDownAmt">—</span></div>
       <div class="result-row"><span>Тіло лізингу</span><span id="leaseBody">—</span></div>
+      <div class="result-row" id="leaseResidualRow"><span>Залишкова вартість (викуп)</span><span id="leaseResidualAmt">—</span></div>
       <div class="result-row"><span>Загальна сума виплат</span><span id="leaseTotal">—</span></div>
       <div class="result-row"><span>Переплата</span><span id="leaseOver" style="color:var(--health-primary)">—</span></div>
     </div>
   </div>
+
+  <!-- SEO БЛОК 1 -->
+  <section class="seo-block" style="margin-bottom:40px;">
+    <h2>Калькулятор лізингу онлайн</h2>
+    <p>Розрахуйте щомісячний лізинговий платіж для автомобіля або обладнання. Калькулятор враховує аванс, строк, відсоткову ставку та залишкову вартість — усі ключові параметри лізингового договору.</p>
+    <p>Лізинг — зручний фінансовий інструмент для фізичних і юридичних осіб в Україні. На відміну від автокредиту, лізинг дозволяє знизити щомісячне навантаження на бюджет завдяки залишковій вартості та гнучким умовам авансу. Скористайтесь нашим безкоштовним калькулятором, щоб порівняти різні сценарії та обрати оптимальні умови лізингу.</p>
+  </section>
+
+  <!-- SEO БЛОК 2 — ПРИКЛАД РОЗРАХУНКУ -->
+  <section class="seo-block" style="margin-bottom:40px;">
+    <h2>Приклад розрахунку лізингу</h2>
+    <p>Розглянемо авто вартістю 800 000 ₴ на 36 місяців під 16% річних з авансом 20% і порівняємо три варіанти залишкової вартості:</p>
+    <div style="overflow-x:auto;margin-bottom:16px">
+      <table style="width:100%;border-collapse:collapse;font-size:14px">
+        <thead>
+          <tr style="background:var(--finance-primary);color:#fff">
+            <th style="padding:12px 16px;text-align:left">Залишкова вартість</th>
+            <th style="padding:12px 16px;text-align:left">Щомісячний платіж</th>
+            <th style="padding:12px 16px;text-align:left">Викуп наприкінці</th>
+            <th style="padding:12px 16px;text-align:left">Загальна переплата</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr style="background:var(--bg-white)">
+            <td style="padding:11px 16px;font-weight:700">0% (без викупу)</td>
+            <td style="padding:11px 16px;color:var(--finance-primary);font-weight:700">~22 501 ₴</td>
+            <td style="padding:11px 16px">0 ₴</td>
+            <td style="padding:11px 16px">~170 018 ₴</td>
+          </tr>
+          <tr style="background:var(--bg-page)">
+            <td style="padding:11px 16px;font-weight:700">20%</td>
+            <td style="padding:11px 16px;color:var(--finance-primary);font-weight:700">~13 384 ₴</td>
+            <td style="padding:11px 16px">160 000 ₴</td>
+            <td style="padding:11px 16px">~1 809 ₴</td>
+          </tr>
+          <tr style="background:var(--bg-white)">
+            <td style="padding:11px 16px;font-weight:700">40%</td>
+            <td style="padding:11px 16px;color:var(--finance-primary);font-weight:700">~4 267 ₴</td>
+            <td style="padding:11px 16px">320 000 ₴</td>
+            <td style="padding:11px 16px">−166 400 ₴</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p style="font-size:14px;color:var(--text-light)">
+      💡 Чим вища залишкова вартість, тим нижчий щомісячний платіж — але наприкінці строку потрібно сплатити суму викупу одноразово (або переоформити новий договір). При дуже високій залишковій вартості та помірній ставці сума викупу частково «з'їдає» нараховані відсотки, тому показник переплати може бути невеликим або навіть від'ємним — однак це не означає, що лізинг безкоштовний: великий платіж просто переноситься на кінець строку.
+    </p>
+  </section>
+
+  <!-- FAQ -->
   <section class="seo-block" style="margin-bottom:40px;">
     <h2>Часті запитання</h2>
     <div class="faq-item">
@@ -186,11 +246,7 @@
       <div class="faq-answer">Мінімальний аванс при лізингу автомобіля в Україні зазвичай становить від 10% до 20% залежно від лізингової компанії та умов договору. Більший аванс зменшує щомісячний платіж і загальну суму переплати.</div>
     </div>
   </section>
-<section class="seo-block" style="margin-bottom:40px;">
-<h2>Калькулятор лізингу онлайн</h2>
-    <p>Розрахуйте щомісячний лізинговий платіж для автомобіля або обладнання. Калькулятор враховує аванс, строк, відсоткову ставку та залишкову вартість — усі ключові параметри лізингового договору.</p>
-    <p>Лізинг — зручний фінансовий інструмент для фізичних і юридичних осіб в Україні. На відміну від автокредиту, лізинг дозволяє знизити щомісячне навантаження на бюджет завдяки залишковій вартості та гнучким умовам авансу. Скористайтесь нашим безкоштовним калькулятором, щоб порівняти різні сценарії та обрати оптимальні умови лізингу.</p>
-  </section>
+
   <h2 class="section-title">Схожі калькулятори</h2>
   <div class="related-grid" style="margin-bottom:48px;">
     <a href="/uk/finance/credit/" class="related-card">
@@ -250,34 +306,62 @@
 </footer>
 <script src="/assets/js/main.js"></script>
 <script>
+function toggleLeaseAdvanced() {
+  var block = document.getElementById('leaseAdvancedBlock');
+  var arrow = document.getElementById('leaseAdvancedArrow');
+  var isHidden = block.style.display === 'none';
+  block.style.display = isHidden ? 'block' : 'none';
+  arrow.textContent = isHidden ? '▼' : '▶';
+}
+document.getElementById('leaseAdvancedBlock').style.display = 'none';
+document.getElementById('leaseAdvancedArrow').textContent = '▶';
 
 function calcLease() {
-  var car=parseFloat(document.getElementById('leaseCar').value)||0;
-  var down=parseFloat(document.getElementById('leaseDown').value)||0;
-  var n=parseInt(document.getElementById('leaseTerm').value)||0;
-  var rate=parseFloat(document.getElementById('leaseRate').value)||0;
-  var residual=parseFloat(document.getElementById('leaseResidual').value)||0;
-  if(!car||!n||!rate) return;
-  var downAmt=car*down/100;
-  var residualAmt=car*residual/100;
-  var body=car-downAmt-residualAmt;
-  var r=rate/100/12;
-  var monthly;
-  if(residualAmt>0) {
-    monthly=(body*r+residualAmt*r)/(1-Math.pow(1+r,-n))+residualAmt*r;
-    monthly=body*(r*Math.pow(1+r,n))/(Math.pow(1+r,n)-1)+residualAmt*r;
-  } else {
-    monthly=body*(r*Math.pow(1+r,n))/(Math.pow(1+r,n)-1);
+  var errEl = document.getElementById('leaseError');
+  errEl.style.display = 'none';
+  errEl.textContent = '';
+
+  var car = parseFloat(document.getElementById('leaseCar').value);
+  var down = parseFloat(document.getElementById('leaseDown').value);
+  var n = parseInt(document.getElementById('leaseTerm').value, 10);
+  var rate = parseFloat(document.getElementById('leaseRate').value);
+  var residual = parseFloat(document.getElementById('leaseResidual').value);
+
+  if (!(car > 0) || isNaN(down) || down < 0 || !(n > 0) || !(rate > 0) || isNaN(residual) || residual < 0) {
+    errEl.textContent = 'Перевірте введені значення: вартість, строк і ставка мають бути більше нуля.';
+    errEl.style.display = 'block';
+    return;
   }
-  var total=monthly*n+downAmt+residualAmt;
-  var over=total-car;
-  document.getElementById('leaseResult').style.display='block';
-  document.getElementById('leaseMonthly').textContent=formatNumber(monthly)+' ₴';
-  document.getElementById('leaseCost').textContent=formatNumber(car)+' ₴';
-  document.getElementById('leaseDownAmt').textContent=formatNumber(downAmt)+' ₴';
-  document.getElementById('leaseBody').textContent=formatNumber(car-downAmt)+' ₴';
-  document.getElementById('leaseTotal').textContent=formatNumber(total)+' ₴';
-  document.getElementById('leaseOver').textContent=formatNumber(over)+' ₴';
+
+  if (down + residual >= 100) {
+    errEl.textContent = 'Сума авансу та залишкової вартості не може перевищувати 100% від вартості авто.';
+    errEl.style.display = 'block';
+    return;
+  }
+
+  var downAmt = car * down / 100;
+  var residualAmt = car * residual / 100;
+  var body = car - downAmt - residualAmt;
+  var r = rate / 100 / 12;
+
+  // Ануїтетний платіж з урахуванням балонного (залишкового) платежу наприкінці строку.
+  // PV (тіло лізингу) = monthly * [1-(1+r)^-n]/r + residualAmt * (1+r)^-n
+  // Звідси: monthly = [body - residualAmt*(1+r)^-n] * r / [1-(1+r)^-n]
+  var discFactor = Math.pow(1 + r, -n);
+  var monthly = (body - residualAmt * discFactor) * r / (1 - discFactor);
+
+  var total = monthly * n + downAmt + residualAmt;
+  var over = total - car;
+
+  document.getElementById('leaseResult').style.display = 'block';
+  document.getElementById('leaseMonthly').textContent = formatNumber(monthly) + ' ₴';
+  document.getElementById('leaseCost').textContent = formatNumber(car) + ' ₴';
+  document.getElementById('leaseDownAmt').textContent = formatNumber(downAmt) + ' ₴';
+  document.getElementById('leaseBody').textContent = formatNumber(body) + ' ₴';
+  document.getElementById('leaseResidualRow').style.display = residual > 0 ? '' : 'none';
+  document.getElementById('leaseResidualAmt').textContent = formatNumber(residualAmt) + ' ₴';
+  document.getElementById('leaseTotal').textContent = formatNumber(total) + ' ₴';
+  document.getElementById('leaseOver').textContent = formatNumber(over) + ' ₴';
 }
 </script>
 </body>

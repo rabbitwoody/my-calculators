@@ -3,15 +3,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Іпотечний калькулятор онлайн 2026 — розрахувати щомісячний платіж по іпотеці в Україні | CalcSpace</title>
-  <meta name="description" content="Іпотечний калькулятор онлайн: розрахуйте щомісячний платіж, переплату та графік виплат. Програма єОселя 7%. Ануїтет vs диференційований платіж. Безкоштовно.">
+  <title>Іпотечний калькулятор онлайн 2026 — розрахувати платіж по іпотеці | CalcSpace</title>
+  <meta name="description" content="Іпотечний калькулятор онлайн: розрахуйте щомісячний платіж, переплату та графік виплат. Програма єОселя 3-7%. Ануїтет vs диференційований платіж. Безкоштовно.">
   <link rel="canonical" href="https://calc-space.online/uk/finance/mortgage/">
   <link rel="alternate" hreflang="uk" href="https://calc-space.online/uk/finance/mortgage/">
   <link rel="alternate" hreflang="ru" href="https://calc-space.online/ru/finance/mortgage/">
   <link rel="alternate" hreflang="x-default" href="https://calc-space.online/uk/finance/mortgage/">
   <meta property="og:title" content="Іпотечний калькулятор онлайн | CalcSpace">
-  <meta property="og:description" content="Іпотечний калькулятор онлайн: розрахуйте щомісячний платіж, переплату та графік виплат. Програма єОселя 7%. Ануїтет vs диференційований платіж. Безкоштовно.">
+  <meta property="og:description" content="Розрахуйте щомісячний платіж, переплату та графік виплат по іпотеці. Програма єОселя. Ануїтет vs диференційований платіж. Безкоштовно.">
   <meta property="og:type" content="website">
+  <meta property="og:url" content="https://calc-space.online/uk/finance/mortgage/">
+  <meta property="og:locale" content="uk_UA">
+  <meta property="og:site_name" content="CalcSpace">
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"WebApplication","name":"Іпотечний калькулятор онлайн",
   "url":"https://calc-space.online/uk/finance/mortgage/",
@@ -20,8 +23,8 @@
   </script>
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
-    {"@type":"Question","name":"Як розрахувати щомісячний платіж по іпотеці?","acceptedAnswer":{"@type":"Answer","text":"Щомісячний платіж розраховується за формулою ануїтету: M = P × r × (1+r)^n / ((1+r)^n - 1), де P — сума кредиту, r — місячна ставка, n — кількість місяців."}},"
-    {"@type":"Question","name":"Що таке програма єОселя?","acceptedAnswer":{"@type":"Answer","text":"єОселя — державна програма пільгового іпотечного кредитування під 7% річних для військових, поліцейських, вчителів, лікарів та молоді до 25 років."}},"
+    {"@type":"Question","name":"Як розрахувати щомісячний платіж по іпотеці?","acceptedAnswer":{"@type":"Answer","text":"Щомісячний платіж розраховується за формулою ануїтету: M = P × r × (1+r)^n / ((1+r)^n - 1), де P — сума кредиту, r — місячна ставка, n — кількість місяців."}},
+    {"@type":"Question","name":"Що таке програма єОселя?","acceptedAnswer":{"@type":"Answer","text":"єОселя — державна програма пільгового іпотечного кредитування зі ставками 3% або 7% річних залежно від категорії: військові, ветерани та ВПО можуть отримати ставку 3%, інші пільгові категорії (вчителі, лікарі, громадяни без власного житла) — 7%."}},
     {"@type":"Question","name":"Що вигідніше — ануїтет чи диференційований платіж?","acceptedAnswer":{"@type":"Answer","text":"Диференційований платіж вигідніший фінансово — загальна переплата менша. Але перші платежі більші. Ануїтет зручніший для планування бюджету."}}
   ]}
   </script>
@@ -117,31 +120,32 @@
     <div class="calc-card">
       <h2>Параметри іпотеки</h2>
       <div class="form-group">
-        <label>Сума кредиту (₴)</label>
+        <label for="mAmount">Сума кредиту (₴)</label>
         <input type="number" id="mAmount" value="2000000" min="10000">
       </div>
       <div class="form-group">
-        <label>Відсоткова ставка (% річних)</label>
+        <label for="mRate">Відсоткова ставка (% річних)</label>
         <input type="number" id="mRate" value="15" min="0.1" max="100" step="0.1">
       </div>
       <div class="form-group">
-        <label>Строк кредиту (років)</label>
+        <label for="mTerm">Строк кредиту (років)</label>
         <input type="number" id="mTerm" value="20" min="1" max="30">
       </div>
       <div class="form-group">
-        <label>Тип платежу</label>
+        <label for="mType">Тип платежу</label>
         <select id="mType">
           <option value="annuity">Ануїтетний (однакові щомісяця)</option>
           <option value="diff">Диференційований (зменшуються)</option>
         </select>
       </div>
+      <div id="mError" style="display:none;color:#c0392b;font-size:14px;margin-top:4px;"></div>
       <button class="calc-btn calc-btn-finance" onclick="calcMortgage()">Розрахувати іпотеку</button>
     </div>
 
     <div class="result-card">
       <h2>Результат розрахунку</h2>
       <div class="result-main result-finance" id="mResult" style="display:none">
-        <div class="result-label">Щомісячний платіж</div>
+        <div class="result-label" id="mMonthlyLabel">Щомісячний платіж</div>
         <div class="result-value" id="mMonthly">—</div>
       </div>
       <div class="result-row"><span>Сума кредиту</span><span id="mAmountRes">—</span></div>
@@ -175,9 +179,9 @@
     <h2>Що таке іпотека і як розрахувати іпотечний платіж</h2>
     <p>Іпотека — це довгостроковий кредит під заставу нерухомості. На відміну від звичайного споживчого кредиту, іпотека видається на строк від 5 до 30 років під значно нижчу відсоткову ставку, оскільки банк має заставу у вигляді нерухомості.</p>
     <p>Розрахувати іпотеку онлайн — це перший крок перед зверненням до банку. Наш іпотечний калькулятор допоможе вам зрозуміти який щомісячний платіж вам буде по силах, скільки ви переплатите за весь строк кредиту та порівняти різні умови.</p>
-    <p>В Україні іпотечні ставки у 2026 році знаходяться в діапазоні 14–22% річних для ринкових кредитів. За державною програмою єОселя ставка становить 7% річних для окремих категорій громадян.</p>
+    <p>В Україні іпотечні ставки у 2026 році знаходяться в діапазоні 14–22% річних для ринкових кредитів. За державною програмою єОселя ставка становить 3% або 7% річних залежно від пільгової категорії позичальника.</p>
 
-    <!-- ПОРІВНЯЛЬНА ТАБЛИЦЯ БАНКІВ -->
+    <!-- ПОРІВНЯЛЬНА ТАБЛИЦЯ -->
     <h2 style="margin-top:32px">Орієнтовні ставки по іпотеці в Україні 2026</h2>
     <div style="overflow-x:auto;margin-bottom:16px">
       <table style="width:100%;border-collapse:collapse;font-size:14px">
@@ -191,26 +195,27 @@
         </thead>
         <tbody>
           <tr style="background:var(--bg-white)">
-            <td style="padding:11px 16px;font-weight:700">єОселя</td>
-            <td style="padding:11px 16px;color:var(--finance-primary);font-weight:700">7%</td>
+            <td style="padding:11px 16px;font-weight:700">єОселя — 3%</td>
+            <td style="padding:11px 16px;color:var(--finance-primary);font-weight:700">3%</td>
             <td style="padding:11px 16px">до 20 років</td>
-            <td style="padding:11px 16px">Військові, вчителі, лікарі, молодь до 25 р.</td>
+            <td style="padding:11px 16px">Військові, ветерани, члени їх сімей, ВПО</td>
           </tr>
           <tr style="background:var(--bg-page)">
+            <td style="padding:11px 16px;font-weight:700">єОселя — 7%</td>
+            <td style="padding:11px 16px;color:var(--finance-primary);font-weight:700">7%</td>
+            <td style="padding:11px 16px">до 20 років</td>
+            <td style="padding:11px 16px">Вчителі, лікарі та інші громадяни без власного житла</td>
+          </tr>
+          <tr style="background:var(--bg-white)">
             <td style="padding:11px 16px;font-weight:700">Ринкова іпотека</td>
             <td style="padding:11px 16px;color:var(--finance-primary);font-weight:700">14–22%</td>
             <td style="padding:11px 16px">до 30 років</td>
             <td style="padding:11px 16px">Для всіх, залежить від банку</td>
           </tr>
-          <tr style="background:var(--bg-white)">
-            <td style="padding:11px 16px;font-weight:700">Молодіжна іпотека</td>
-            <td style="padding:11px 16px;color:var(--finance-primary);font-weight:700">3%</td>
-            <td style="padding:11px 16px">до 30 років</td>
-            <td style="padding:11px 16px">Молодь до 35 р., перше житло</td>
-          </tr>
         </tbody>
       </table>
     </div>
+    <p style="font-size:13px;color:var(--text-light)">⚠️ Умови державних програм періодично змінюються. Перевіряйте актуальні умови на сайті Дія або у вашому банку перед оформленням.</p>
   </section>
 
   <!-- SEO БЛОК 2 — ФОРМУЛИ -->
@@ -238,22 +243,22 @@
       <div style="background:var(--bg-page);padding:20px;border-radius:var(--radius);border:1px solid var(--border)">
         <div style="font-size:15px;font-weight:700;margin-bottom:12px;color:var(--finance-primary)">Ануїтетний платіж</div>
         <div style="display:grid;gap:8px;font-size:14px">
-          <div style="display:flex;justify-content:space-between"><span>Щомісячний платіж</span><span style="font-weight:700">26 367 ₴</span></div>
-          <div style="display:flex;justify-content:space-between"><span>Загальна сума</span><span style="font-weight:700">6 328 080 ₴</span></div>
-          <div style="display:flex;justify-content:space-between"><span>Переплата</span><span style="font-weight:700;color:var(--health-primary)">4 328 080 ₴</span></div>
+          <div style="display:flex;justify-content:space-between"><span>Щомісячний платіж</span><span style="font-weight:700">26 336 ₴</span></div>
+          <div style="display:flex;justify-content:space-between"><span>Загальна сума</span><span style="font-weight:700">6 320 590 ₴</span></div>
+          <div style="display:flex;justify-content:space-between"><span>Переплата</span><span style="font-weight:700;color:var(--health-primary)">4 320 590 ₴</span></div>
         </div>
       </div>
       <div style="background:var(--bg-page);padding:20px;border-radius:var(--radius);border:1px solid var(--border)">
         <div style="font-size:15px;font-weight:700;margin-bottom:12px;color:var(--finance-primary)">Диференційований платіж</div>
         <div style="display:grid;gap:8px;font-size:14px">
           <div style="display:flex;justify-content:space-between"><span>Перший платіж</span><span style="font-weight:700">33 333 ₴</span></div>
-          <div style="display:flex;justify-content:space-between"><span>Загальна сума</span><span style="font-weight:700">5 506 667 ₴</span></div>
-          <div style="display:flex;justify-content:space-between"><span>Переплата</span><span style="font-weight:700;color:var(--converter-primary)">3 506 667 ₴</span></div>
+          <div style="display:flex;justify-content:space-between"><span>Загальна сума</span><span style="font-weight:700">5 012 500 ₴</span></div>
+          <div style="display:flex;justify-content:space-between"><span>Переплата</span><span style="font-weight:700;color:var(--converter-primary)">3 012 500 ₴</span></div>
         </div>
       </div>
     </div>
     <p style="font-size:14px;color:var(--text-light)">
-      💡 Диференційований платіж вигідніший на 821 413 грн, але перші платежі вищі на 6 966 грн.
+      💡 Диференційований платіж вигідніший на 1 308 090 грн, але перший платіж вищий на 6 998 грн порівняно з ануїтетом.
     </p>
   </section>
 
@@ -268,12 +273,12 @@
 
     <div class="faq-item">
       <div class="faq-question">Що таке програма єОселя і хто може взяти участь?<span class="faq-arrow">▼</span></div>
-      <div class="faq-answer">єОселя — державна програма пільгової іпотеки під 7% річних. Учасники: військовослужбовці та ветерани, поліцейські та рятувальники, вчителі та вихователі, медичні працівники, молодь до 25 років (перше житло). Максимальна сума: 3 млн грн, строк до 20 років.</div>
+      <div class="faq-answer">єОселя — державна програма пільгової іпотеки зі ставками 3% або 7% річних залежно від категорії позичальника. Ставку 3% можуть отримати військовослужбовці, ветерани війни та члени їх сімей, внутрішньо переміщені особи. Ставку 7% — вчителі, медичні працівники та інші громадяни без власного житла. Перший внесок — від 20%, строк до 20 років. Точні умови та перелік банків-учасників перевіряйте на сайті Дія або порталі програми, оскільки вони можуть змінюватися.</div>
     </div>
 
     <div class="faq-item">
       <div class="faq-question">Що вигідніше — ануїтет чи диференційований платіж?<span class="faq-arrow">▼</span></div>
-      <div class="faq-answer">Диференційований платіж вигідніший фінансово — загальна переплата менша на 10–20%, оскільки відсотки нараховуються на залишок боргу, який постійно зменшується. Але перші платежі вищі. Ануїтет зручніший для планування бюджету — платіж однаковий протягом всього строку. Більшість українських банків пропонує саме ануїтет.</div>
+      <div class="faq-answer">Диференційований платіж вигідніший фінансово — загальна переплата менша, оскільки відсотки нараховуються на залишок боргу, який постійно зменшується. Але перші платежі вищі. Ануїтет зручніший для планування бюджету — платіж однаковий протягом всього строку. Більшість українських банків пропонує саме ануїтет.</div>
     </div>
 
     <div class="faq-item">
@@ -307,7 +312,7 @@
         <div style="width:36px;height:36px;border-radius:50%;background:var(--finance-primary);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:16px;flex-shrink:0">3</div>
         <div>
           <div style="font-weight:700;margin-bottom:4px">Перевірте умови програми єОселя</div>
-          <div style="font-size:14px;color:var(--text-mid)">Якщо ви військовий, вчитель, лікар або молодь до 25 р. — ви можете отримати іпотеку під 7% замість 15–20%.</div>
+          <div style="font-size:14px;color:var(--text-mid)">Якщо ви військовий, ветеран, ВПО, вчитель або лікар — ви можете отримати іпотеку під 3–7% замість 14–22%.</div>
         </div>
       </div><div style="display:flex;gap:16px;margin-bottom:20px;align-items:flex-start">
         <div style="width:36px;height:36px;border-radius:50%;background:var(--finance-primary);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:16px;flex-shrink:0">4</div>
@@ -371,60 +376,100 @@
 <script src="/assets/js/main.js"></script>
 <script>
 function calcMortgage() {
-  var amount = parseFloat(document.getElementById('mAmount').value) || 0;
-  var rate = parseFloat(document.getElementById('mRate').value) || 0;
-  var term = parseFloat(document.getElementById('mTerm').value) || 0;
+  var errEl = document.getElementById('mError');
+  errEl.style.display = 'none';
+  errEl.textContent = '';
+
+  var amount = parseFloat(document.getElementById('mAmount').value);
+  var rate = parseFloat(document.getElementById('mRate').value);
+  var term = parseFloat(document.getElementById('mTerm').value);
   var type = document.getElementById('mType').value;
-  if (!amount || !rate || !term) { alert('Заповніть всі поля'); return; }
-  var months = term * 12;
+
+  if (!(amount > 0) || !(rate > 0) || !(term > 0)) {
+    errEl.textContent = 'Заповніть усі поля коректними значеннями: сума, ставка та строк мають бути більше нуля.';
+    errEl.style.display = 'block';
+    return;
+  }
+
+  var months = Math.round(term * 12);
   var r = rate / 100 / 12;
   var monthly, total;
+
   if (type === 'annuity') {
-    monthly = amount * (r * Math.pow(1+r,months)) / (Math.pow(1+r,months) - 1);
+    monthly = amount * (r * Math.pow(1 + r, months)) / (Math.pow(1 + r, months) - 1);
     total = monthly * months;
   } else {
     var principal = amount / months;
-    monthly = principal + amount * r;
+    monthly = principal + amount * r; // перший платіж (найбільший)
     total = amount + (amount * r * (months + 1) / 2);
   }
+
   var over = total - amount;
   var yrs = Math.floor(term);
-  var yrLabel = 'р.';
+  var monthsLeft = Math.round((term - yrs) * 12);
+  var yrLabel = pluralizeYearsUk(yrs);
+  var termText = yrs + ' ' + yrLabel + (monthsLeft > 0 ? ' ' + monthsLeft + ' ' + pluralizeMonthsUk(monthsLeft) : '');
+
   document.getElementById('mResult').style.display = 'block';
+  document.getElementById('mMonthlyLabel').textContent = type === 'annuity' ? 'Щомісячний платіж' : 'Перший платіж (найбільший)';
   document.getElementById('mMonthly').textContent = formatNumber(monthly) + ' ₴';
   document.getElementById('mAmountRes').textContent = formatNumber(amount) + ' ₴';
   document.getElementById('mTotal').textContent = formatNumber(total) + ' ₴';
   document.getElementById('mOver').textContent = formatNumber(over) + ' ₴';
-  document.getElementById('mTermRes').textContent = yrs + ' ' + yrLabel;
+  document.getElementById('mTermRes').textContent = termText;
+
   buildSchedule(amount, r, months, type);
   document.getElementById('mScheduleSection').style.display = 'block';
 }
+
+function pluralizeYearsUk(n) {
+  var mod100 = n % 100;
+  var mod10 = n % 10;
+  if (mod100 >= 11 && mod100 <= 14) return 'років';
+  if (mod10 === 1) return 'рік';
+  if (mod10 >= 2 && mod10 <= 4) return 'роки';
+  return 'років';
+}
+
+function pluralizeMonthsUk(n) {
+  var mod100 = n % 100;
+  var mod10 = n % 10;
+  if (mod100 >= 11 && mod100 <= 14) return 'місяців';
+  if (mod10 === 1) return 'місяць';
+  if (mod10 >= 2 && mod10 <= 4) return 'місяці';
+  return 'місяців';
+}
+
 function buildSchedule(amount, r, months, type) {
   var tbody = document.getElementById('mScheduleBody');
   tbody.innerHTML = '';
   var balance = amount;
-  var principal = amount / months;
+  var principalDiff = amount / months;
   var limit = Math.min(24, months);
+
+  // Для ануїтету платіж сталий — рахуємо один раз поза циклом.
+  var annuityPayment = amount * (r * Math.pow(1 + r, months)) / (Math.pow(1 + r, months) - 1);
+
   for (var i = 1; i <= limit; i++) {
     var payment, princ, interest;
     if (type === 'annuity') {
-      payment = amount * (r * Math.pow(1+r,months)) / (Math.pow(1+r,months) - 1);
+      payment = annuityPayment;
       interest = balance * r;
       princ = payment - interest;
     } else {
       interest = balance * r;
-      princ = principal;
+      princ = principalDiff;
       payment = princ + interest;
     }
     balance -= princ;
     if (balance < 0) balance = 0;
     var tr = document.createElement('tr');
     tr.style.background = i % 2 === 0 ? 'var(--bg-page)' : 'var(--bg-white)';
-    tr.innerHTML = '<td style="padding:10px 16px;font-size:14px">'+i+'</td>' +
-      '<td style="padding:10px 16px;text-align:right;font-size:14px;font-weight:600">'+formatNumber(payment)+' ₴</td>' +
-      '<td style="padding:10px 16px;text-align:right;font-size:14px;color:var(--finance-primary)">'+formatNumber(princ)+' ₴</td>' +
-      '<td style="padding:10px 16px;text-align:right;font-size:14px;color:var(--health-primary)">'+formatNumber(interest)+' ₴</td>' +
-      '<td style="padding:10px 16px;text-align:right;font-size:14px">'+formatNumber(balance)+' ₴</td>';
+    tr.innerHTML = '<td style="padding:10px 16px;font-size:14px">' + i + '</td>' +
+      '<td style="padding:10px 16px;text-align:right;font-size:14px;font-weight:600">' + formatNumber(payment) + ' ₴</td>' +
+      '<td style="padding:10px 16px;text-align:right;font-size:14px;color:var(--finance-primary)">' + formatNumber(princ) + ' ₴</td>' +
+      '<td style="padding:10px 16px;text-align:right;font-size:14px;color:var(--health-primary)">' + formatNumber(interest) + ' ₴</td>' +
+      '<td style="padding:10px 16px;text-align:right;font-size:14px">' + formatNumber(balance) + ' ₴</td>';
     tbody.appendChild(tr);
   }
 }

@@ -240,16 +240,28 @@ function calcBmi() {
   var bmi=w/(h*h);
   var cat='',col='#333';
   for(var i=0;i<bmiCats.length;i++){if(bmi>=bmiCats[i][2]&&bmi<bmiCats[i][3]){cat=bmiCats[i][0];col=bmiCats[i][1];break;}}
-  var nMin=(18.5*h*h).toFixed(1),nMax=(24.9*h*h).toFixed(1);
-  var diff=w-18.5*h*h;
+  var nMin=(18.5*h*h), nMax=(24.9*h*h);
+  var diff;
+  if (w < nMin) {
+    diff = w - nMin;
+  } else if (w > nMax) {
+    diff = w - nMax;
+  } else {
+    diff = 0;
+  }
   document.getElementById('bmiResult').style.display='block';
   document.getElementById('bmiValue').textContent=bmi.toFixed(1);
   document.getElementById('bmiCategory').textContent=cat;
   document.getElementById('bmiCategory').style.color=col;
-  document.getElementById('bmiNormal').textContent=nMin+' – '+nMax+' кг';
-  var ds=diff>=0?'+'+diff.toFixed(1):diff.toFixed(1);
-  document.getElementById('bmiDiff').textContent=ds+' кг';
-  document.getElementById('bmiDiff').style.color=Math.abs(diff)<1?'#27ae60':'#e74c3c';
+  document.getElementById('bmiNormal').textContent=nMin.toFixed(1)+' – '+nMax.toFixed(1)+' кг';
+  if (diff === 0) {
+    document.getElementById('bmiDiff').textContent='У межах норми';
+    document.getElementById('bmiDiff').style.color='#27ae60';
+  } else {
+    var ds=diff>0?'+'+diff.toFixed(1)+' кг':diff.toFixed(1)+' кг';
+    document.getElementById('bmiDiff').textContent=ds;
+    document.getElementById('bmiDiff').style.color='#e74c3c';
+  }
 }
 </script>
 </body>

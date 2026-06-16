@@ -23,7 +23,7 @@
   {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
       {"@type":"Question","name":"Як нарахувати ПДВ 20%?","acceptedAnswer":{"@type":"Answer","text":"Щоб нарахувати ПДВ 20%, помножте суму без ПДВ на 1.2. Наприклад: 10 000 грн × 1.2 = 12 000 грн. Сума ПДВ = 2 000 грн."}},
       {"@type":"Question","name":"Як виділити ПДВ із суми?","acceptedAnswer":{"@type":"Answer","text":"Щоб виділити ПДВ 20% із суми з ПДВ: ПДВ = Сума × 20/120, або простіше — розділіть суму з ПДВ на 6."}},
-      {"@type":"Question","name":"Яка ставка ПДВ в Україні 2026?","acceptedAnswer":{"@type":"Answer","text":"В Україні діють ставки ПДВ: 20% (стандартна), 14% (окремі продовольчі товари), 7% (ліки, книги, готельні послуги), 0% (експорт)."}},
+      {"@type":"Question","name":"Яка ставка ПДВ в Україні 2026?","acceptedAnswer":{"@type":"Answer","text":"В Україні діють ставки ПДВ: 20% (стандартна, більшість товарів і послуг), 14% (окремі сільськогосподарські товари за переліком ПКУ, зокрема зернові та олійні культури), 7% (лікарські засоби, медичні вироби та окремі послуги в сфері культури й енергетики), 0% (експорт)."}},
       {"@type":"Question","name":"Яка різниця між нарахуванням та виділенням ПДВ?","acceptedAnswer":{"@type":"Answer","text":"Нарахування — додаємо ПДВ до суми без ПДВ. Виділення — знаходимо ПДВ всередині суми з ПДВ. Різні операції для різних ситуацій в бухобліку."}}
     ]}
   </script>
@@ -121,25 +121,26 @@
     <div class="calc-card">
       <h2>Параметри розрахунку</h2>
       <div class="form-group">
-        <label>Сума (₴)</label>
+        <label for="vatAmount">Сума (₴)</label>
         <input type="number" id="vatAmount" value="10000" min="0" placeholder="Введіть суму...">
       </div>
       <div class="form-group">
-        <label>Ставка ПДВ</label>
+        <label for="vatRate">Ставка ПДВ</label>
         <select id="vatRate">
           <option value="20">20% — стандартна</option>
-          <option value="14">14% — окремі продтовари</option>
-          <option value="7">7% — ліки, книги, готелі</option>
+          <option value="14">14% — окремі сільгосптовари</option>
+          <option value="7">7% — ліки, медвироби</option>
           <option value="0">0% — пільговий / експорт</option>
         </select>
       </div>
       <div class="form-group">
-        <label>Операція</label>
+        <label for="vatOp">Операція</label>
         <select id="vatOp">
           <option value="add">Нарахувати ПДВ (додати до суми без ПДВ)</option>
           <option value="extract">Виділити ПДВ (знайти ПДВ в сумі з ПДВ)</option>
         </select>
       </div>
+      <div id="vatError" style="display:none;color:#c0392b;font-size:14px;margin-top:4px;"></div>
       <button class="calc-btn calc-btn-finance" onclick="calcVat()">Розрахувати ПДВ</button>
     </div>
 
@@ -184,13 +185,13 @@
           </tr>
           <tr style="background:var(--bg-page)">
             <td style="padding:11px 16px;font-weight:700;color:var(--finance-primary)">14%</td>
-            <td style="padding:11px 16px">Окремі продовольчі товари</td>
-            <td style="padding:11px 16px">М'ясо, риба, молоко, яйця, масло</td>
+            <td style="padding:11px 16px">Окремі сільськогосподарські товари за переліком ПКУ</td>
+            <td style="padding:11px 16px">Зернові та олійні культури (зерно, соняшник тощо)</td>
           </tr>
           <tr style="background:var(--bg-white)">
             <td style="padding:11px 16px;font-weight:700;color:var(--finance-primary)">7%</td>
             <td style="padding:11px 16px">Пільгові категорії</td>
-            <td style="padding:11px 16px">Ліки, книги, готельні послуги, туризм</td>
+            <td style="padding:11px 16px">Лікарські засоби, медичні вироби, окремі послуги в сфері культури й енергетики</td>
           </tr>
           <tr style="background:var(--bg-page)">
             <td style="padding:11px 16px;font-weight:700;color:var(--finance-primary)">0%</td>
@@ -200,6 +201,7 @@
         </tbody>
       </table>
     </div>
+    <p style="font-size:13px;color:var(--text-light)">⚠️ Точний перелік товарів і послуг за пільговими ставками визначений у ст. 193 Податкового кодексу України та може уточнюватися — для конкретного товару перевіряйте чинну редакцію ПКУ.</p>
   </section>
 
   <!-- ═══════════════════════════════════════════════════════ -->
@@ -241,7 +243,7 @@
       ▶ Сума ПДВ = 12 000 × 20 / (100 + 20) = 12 000 × 20 / 120 = <strong>2 000 грн</strong><br>▶ Сума без ПДВ = 12 000 − 2 000 = <strong>10 000 грн</strong>
     </div>
 
-    <h3 style="margin-top:24px">Приклад 3. ПДВ 7% на ліки</h3>
+    <h3 style="margin-top:24px">Приклад 3. ПДВ 7% на лікарські засоби</h3>
     <p>Аптека отримала товар на суму 5 000 грн без ПДВ 7%. Розрахунок ПДВ:</p>
     <div style="background:var(--bg-page);padding:16px 20px;border-radius:8px;margin:12px 0;font-size:14px;line-height:2">
       ▶ Сума ПДВ = 5 000 × 7 / 100 = <strong>350 грн</strong><br>▶ Сума з ПДВ = 5 000 + 350 = <strong>5 350 грн</strong>
@@ -266,7 +268,7 @@
 
     <div class="faq-item">
       <div class="faq-question">Яка ставка ПДВ діє в Україні у 2026 році?<span class="faq-arrow">▼</span></div>
-      <div class="faq-answer">В Україні у 2026 році діють такі ставки ПДВ: 20% — стандартна ставка для більшості товарів і послуг; 14% — окремі продовольчі товари (м'ясо, риба, молоко, яйця); 7% — ліки, книги, готельні послуги, туристичні послуги; 0% — експорт товарів, міжнародні перевезення.</div>
+      <div class="faq-answer">В Україні у 2026 році діють такі ставки ПДВ: 20% — стандартна ставка для більшості товарів і послуг; 14% — окремі сільськогосподарські товари за переліком Податкового кодексу, зокрема зернові та олійні культури; 7% — лікарські засоби, медичні вироби та окремі послуги в сфері культури й енергетики; 0% — експорт товарів, міжнародні перевезення.</div>
     </div>
 
     <div class="faq-item">
@@ -364,19 +366,34 @@
 <script src="/assets/js/main.js"></script>
 <script>
 function calcVat() {
-  var amount = parseFloat(document.getElementById('vatAmount').value) || 0;
+  var errEl = document.getElementById('vatError');
+  errEl.style.display = 'none';
+  errEl.textContent = '';
+
+  var amount = parseFloat(document.getElementById('vatAmount').value);
   var rate = parseFloat(document.getElementById('vatRate').value);
   var op = document.getElementById('vatOp').value;
+
+  if (isNaN(amount) || amount < 0) {
+    errEl.textContent = 'Введіть коректну суму (число більше або рівне нулю).';
+    errEl.style.display = 'block';
+    return;
+  }
+
   var noVat, tax, withVat;
   if (op === 'add') {
-    noVat = amount; tax = amount * rate / 100; withVat = amount + tax;
+    noVat = amount;
+    tax = amount * rate / 100;
+    withVat = amount + tax;
   } else {
-    withVat = amount; noVat = amount * 100 / (100 + rate); tax = withVat - noVat;
+    withVat = amount;
+    noVat = amount * 100 / (100 + rate);
+    tax = withVat - noVat;
   }
-  var lbl = op === 'add'
-    ? 'Сума з ПДВ'
-    : 'Сума без ПДВ';
+
+  var lbl = op === 'add' ? 'Сума з ПДВ' : 'Сума без ПДВ';
   var mainVal = op === 'add' ? withVat : noVat;
+
   document.getElementById('vatResMain').style.display = 'block';
   document.getElementById('vatResLabel').textContent = lbl;
   document.getElementById('vatResVal').textContent = formatNumber(mainVal) + ' ₴';
