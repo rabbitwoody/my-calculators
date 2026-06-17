@@ -249,6 +249,7 @@
 <script src="/assets/js/main.js"></script>
 <script>
 var months=["січня", "лютого", "березня", "квітня", "травня", "червня", "липня", "серпня", "вересня", "жовтня", "листопада", "грудня"];
+function pluralDay(n){return (n%10===1&&n%100!==11?'день':n%10>=2&&n%10<=4&&(n%100<10||n%100>=20)?'дні':'днів');}
 function updatePregForm(){
   var m=document.getElementById('pregMethod').value;
   document.getElementById('pregDateGroup').style.display=m==='ultrasound'?'none':'block';
@@ -268,7 +269,7 @@ function calcPreg(){
     var dv=document.getElementById('pregDate').value;
     if(!dv){alert('Введіть дату');return;}
     lmpDate=new Date(dv);
-    if(method==='conception') lmpDate.setDate(lmpDate.getDate()-(cycle-14)-14);
+    if(method==='conception') lmpDate.setDate(lmpDate.getDate()-14-(cycle-28));
   }
   var due=new Date(lmpDate); due.setDate(due.getDate()+280+(cycle-28));
   var conception=new Date(lmpDate); conception.setDate(conception.getDate()+cycle-14);
@@ -280,9 +281,9 @@ function calcPreg(){
   var tri=weeks<14?'I триместр (1–13 тиж)':weeks<28?'II триместр (14–27 тиж)':'III триместр (28–40 тиж)';
   document.getElementById('pregResult').style.display='block';
   document.getElementById('pregDue').textContent=fmtDate(due);
-  document.getElementById('pregCurrent').textContent=weeks+' тижнів '+days+' дні';
+  document.getElementById('pregCurrent').textContent=weeks+' тижнів '+days+' '+pluralDay(days);
   document.getElementById('pregTrimester').textContent=tri;
-  document.getElementById('pregLeft').textContent=daysLeft+' днів';
+  document.getElementById('pregLeft').textContent=daysLeft+' '+pluralDay(daysLeft);
   document.getElementById('pregConception').textContent=fmtDate(conception);
 }
 document.addEventListener('DOMContentLoaded',function(){
